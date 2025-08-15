@@ -25,14 +25,14 @@ authors:
   given-names: "Hilmar"
   orcid: "https://orcid.org/0000-0001-9107-0714"
 cff-version: 1.2.0
-date-released: "2025-06-DD" # to update on release
+date-released: "2025-08-15"
 identifiers:
   - description: "The GitHub release URL of tag v1.0.0."
     type: url
     value: "https://github.com/Imageomics/Collaborative-distributed-science-guide/releases/tag/v1.0.0"
-  - description: "The GitHub URL of the commit tagged with <tag-name>." # update post release
+  - description: "The GitHub URL of the commit tagged with v1.0.0."
     type: url
-    value: "https://github.com/Imageomics/Collaborative-distributed-science-guide/tree/<commit-hash>" # update post release
+    value: "https://github.com/Imageomics/Collaborative-distributed-science-guide/tree/c61bfb8b0a539bb06d3221cb1d8dc37f65254d68"
 keywords:
   - imageomics
   - metadata
