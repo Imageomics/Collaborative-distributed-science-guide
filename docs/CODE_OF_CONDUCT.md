@@ -14,7 +14,7 @@ To this end, we agree as individuals and as a group to:
 
 AI use policy (borrowed from [CRA](https://cra.org/)):
 
-- Allowable use of AI tools that do not share or use the data for training.
+- Allowable use of AI tools requires that the tools do not share or use the data for training.
 - Requires permission if recording others. Language to use when requesting permission:
 
   _“We would like to use `<insert tool name here>` during this discussion to assist with note-taking. `<insert tool name here>` records and transcribes audio and can produce a summary of the discussion. The audio and transcription will only be saved and used internally. Please let us know if you object to the use of `<insert tool name here>`.”_
