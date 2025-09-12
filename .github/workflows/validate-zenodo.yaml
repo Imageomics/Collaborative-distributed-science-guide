@@ -1,6 +1,9 @@
 name: Check zenodo metadata
 
-on: [push]
+on:
+    push:
+        paths:
+          - '.zenodo.json'
 
 jobs:
   check-zenodo-metadata:
