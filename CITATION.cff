@@ -32,7 +32,7 @@ identifiers:
     value: "https://github.com/Imageomics/Collaborative-distributed-science-guide/releases/tag/v1.0.1"
   - description: "The GitHub URL of the commit tagged with v1.0.1."
     type: url
-    value: "https://github.com/Imageomics/Collaborative-distributed-science-guide/tree/<commit-hash>" # update on release
+    value: "https://github.com/Imageomics/Collaborative-distributed-science-guide/tree/55e52f14da68a24dc1d114ffb969437fc8911a35"
 keywords:
   - imageomics
   - metadata
