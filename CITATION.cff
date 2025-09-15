@@ -25,7 +25,7 @@ authors:
   given-names: "Hilmar"
   orcid: "https://orcid.org/0000-0001-9107-0714"
 cff-version: 1.2.0
-date-released: "2025-09-12"
+date-released: "2025-09-15"
 identifiers:
   - description: "The GitHub release URL of tag v1.0.1."
     type: url
