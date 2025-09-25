@@ -4,6 +4,7 @@ on:
     push:
         paths:
           - '.zenodo.json'
+          - '.github/workflows/validate-zenodo.yaml'
 
 jobs:
   check-zenodo-metadata:
