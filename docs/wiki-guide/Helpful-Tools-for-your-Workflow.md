@@ -28,7 +28,7 @@ There is a [jupytext pre-commit hook](https://jupytext.readthedocs.io/en/latest/
 
 ### Marimo
 
-[marimo](https://marimo.io/) ...
+[marimo](https://marimo.io/) functions similarly to a Jupyter Notebook, but has many built-in reproducibility and error-avoidance features, including the fact that it saves as a Python program (similar to the paired file created by [Jupytext](#jupytext)). See the summary in their [README](https://github.com/marimo-team/marimo?tab=readme-ov-file) or explore the [docs](https://docs.marimo.io/) to get started.
 
 ## Formatting and Linting
 
