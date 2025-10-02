@@ -8,7 +8,7 @@ When working with Notebooks that may be re-run without changes to code, it's par
 
 ### Jupytext
 
-If you use Jupyter Notebooks in your project (as many of us do), you may want to consider adding [Jupytext](https://jupytext.readthedocs.io/en/latest/) to your repertoire. [Jupytext](https://github.com/mwouts/jupytext) allows you to [pair](https://github.com/mwouts/jupytext#paired-notebooks) a Jupyter Notebook to a `.py` (or `.md`) file so that `git` renders clearer and more informative diffs, showing only the code and markdown cells that have been updated between commits.
+If you use Jupyter Notebooks in your project (as many of us do), you may want to consider adding [Jupytext](https://jupytext.readthedocs.io/en/latest/) to your repertoire. [mwouts/jupytext](https://github.com/mwouts/jupytext) allows you to [pair](https://github.com/mwouts/jupytext#paired-notebooks) a Jupyter Notebook to a `.py` (or `.md`) file so that `git` renders clearer and more informative diffs, showing only the code and markdown cells that have been updated between commits.
 This makes it easier to see the differences between versions as you work through your project. For instance, if you re-ran your notebook with just a new random seed, the diff in the commit would show that without reproducing the whole thing, and you could go look at the output in the notebook.
 
 #### How it Works
@@ -36,7 +36,7 @@ Have you found yourself saying, "I just need to clean up my code first"? Make th
 
 ### Ruff
 
-Fast _Python_ formatter and linter. You can install [ruff](https://github.com/astral-sh/ruff) with `pip install ruff` or `conda install ruff` in your virtual/conda environment. They also have extensions for [VS Code](https://github.com/astral-sh/ruff-vscode) and [other editors supporting LSP](https://github.com/astral-sh/ruff-lsp).
+Fast _Python_ formatter and linter. You can install [astral-sh/ruff](https://github.com/astral-sh/ruff) with `pip install ruff` or `conda install ruff` in your virtual/conda environment. They also have extensions for [VS Code](https://github.com/astral-sh/ruff-vscode) and [other editors supporting LSP](https://github.com/astral-sh/ruff-lsp).
 
 To format a file, run:
 
@@ -54,7 +54,7 @@ Ruff can also be set up as part of a pre-commit hook or GitHub Workflow. See the
 
 ### Markdownlint
 
-Fast _Markdown_ formatter and linter. We use the [markdownlint](https://github.com/DavidAnson/markdownlint) package for this site; see instructions and example in the [linting section](https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/CONTRIBUTING.md#linting) of our contributing guidelines. It is flexible in configuration and allows for simple checking or even fixing straight-forward formatting issues.
+Fast _Markdown_ formatter and linter. We use the [DavidAnson/markdownlint](https://github.com/DavidAnson/markdownlint) package for this site; see instructions and example in the [linting section](https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/CONTRIBUTING.md#linting) of our contributing guidelines. It is flexible in configuration and allows for simple checking or even fixing straight-forward formatting issues.
 
 ## FAIR Data Access and Validation
 
