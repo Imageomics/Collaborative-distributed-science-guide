@@ -36,7 +36,7 @@ Have you found yourself saying, "I just need to clean up my code first"? Make th
 
 ### Ruff
 
-[Ruff](https://github.com/astral-sh/ruff) is a fast python formatter and linter. You can install it with `pip install ruff` or `conda install ruff` in your virtual/conda environment. They also have extensions for [VS Code](https://github.com/astral-sh/ruff-vscode) and [other editors supporting LSP](https://github.com/astral-sh/ruff-lsp).
+Fast _Python_ formatter and linter. You can install [ruff](https://github.com/astral-sh/ruff) with `pip install ruff` or `conda install ruff` in your virtual/conda environment. They also have extensions for [VS Code](https://github.com/astral-sh/ruff-vscode) and [other editors supporting LSP](https://github.com/astral-sh/ruff-lsp).
 
 To format a file, run:
 
@@ -54,7 +54,7 @@ Ruff can also be set up as part of a pre-commit hook or GitHub Workflow. See the
 
 ### Markdownlint
 
-[markdownlint](https://github.com/DavidAnson/markdownlint) ...
+Fast _Markdown_ formatter and linter. We use the [markdownlint](https://github.com/DavidAnson/markdownlint) package for this site; see instructions and example in the [linting section](https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/CONTRIBUTING.md#linting) of our contributing guidelines. It is flexible in configuration and allows for simple checking or even fixing straight-forward formatting issues.
 
 ## FAIR Data Access and Validation
 
