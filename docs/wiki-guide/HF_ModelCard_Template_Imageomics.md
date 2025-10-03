@@ -10,6 +10,7 @@ tags:
 - animals
 datasets: # Adds link if on HF & shows up on sidebar. Ex: imageomics/TreeOfLife-10M
 metrics: # key list: https://hf.co/metrics
+model_description: # Add a short description (summary) of your model, this will render in searches and the Imageomics Catalog
 ---
 
 <!--
