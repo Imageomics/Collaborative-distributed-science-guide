@@ -10,7 +10,7 @@ Overall [Infrastructure Chart](https://docs.google.com/spreadsheets/d/1JSOi5pp2Y
     - myOSC client portal: [info](https://www.osc.edu/supercomputing/portals/client_portal), [login](https://my.osc.edu/acprod/odb_osc/r/osc/portal/login_desktop?clear=101)
 - Imageomics dedicated GPU server: _Internal_ server, hosts our CVAT instance.
     - [Usage and access guide (_internal_)](https://github.com/Imageomics/internal-guidelines/wiki/Imageomics-GPU-Server)
-    - [CVAT user guide](https://github.com/Imageomics/kabr-tools/wiki/CVAT-User-Guide)
+    - [CVAT user guide](https://imageomics.github.io/kabr-tools/cvat/cvat-guide/)
 - NSF ACCESS Accelerate Allocation: NCSA Delta GPU credits
 - [Amazon Web Services (AWS)](https://aws.amazon.com/?nc2=h_lg): Basic to extremely powerful, abundant (though finite) resources, high cost.
     - Used sparingly for urgent deadlines when other compute is not available (generally hasn't been available at those times either, though) or to host projects that cannot be hosted effectively through a Hugging Face Space.
