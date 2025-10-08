@@ -10,7 +10,7 @@ tags:
 - animals
 datasets: # Adds link if on HF & shows up on sidebar. Ex: Imageomics/TreeOfLife-10M
 metrics: # key list: https://hf.co/metrics
-model_description: # Add a short description (summary) of your model, this will render in searches
+model_description: # Add a short description (summary) of your model, this will render as part of the CardData object through the API
 ---
 
 <!--
