@@ -15,6 +15,7 @@ For each repository, include the following files in the root directory as soon a
 * [LICENSE.md](#license)
 * [.gitignore](#gitignore)
 * [software requirements](#software-requirements-file)
+* [CITATION.cff](#citation)
 
 More [recommendations](#recommended-files) are discussed below.
 
@@ -71,16 +72,6 @@ at the end of the `.gitignore` file.
 It is also advisable to include a machine-readable file with minimal software requirements for your project. For Python projects, this often takes the form of a `requirements.txt` file containing the packages and their versions that were used (eg., `pandas==2.0.1`). If you use `conda`, you may instead opt for an `environment.yml`. These are essential to ensuring the reproducibility and interoperability of your work (by yourself and others). Note that they should _**not**_ be listed in the README.
 
 For more information on managing these environments and generating such files programmatically, see the wiki entry [Virtual Environments](Virtual-Environments.md).
-
-## Recommended Files
-
-Though the following files are not included in every repository and do not have a simple selection process integrated into GitHub, they are extremely important (if not essential) to maintaining FAIR principles and reproducibility in projects, as well as ensuring proper attribution for your work.
-
-### CONTRIBUTING
-
-If you are looking to open your project to more public contributions, it is a good idea to include contributing guidelines. This could take the form of a "CONTRIBUTING.md" file or a subsection of your README.
-
-Contributing guidelines are important to maintain consistency across the way people work on a project. It is important to establish conventions about the important things while avoiding excessive constraints and bureaucracy that would make contributing a pain. Important things include efficient and effective communication.
 
 ### CITATION
 
@@ -142,6 +133,16 @@ references:
     doi: 
     date-released:
 ```
+
+## Recommended Files
+
+Though the following files are not included in every repository and do not have a simple selection process integrated into GitHub, they are extremely important (if not essential) to maintaining FAIR principles and reproducibility in projects, as well as ensuring proper attribution for your work.
+
+### CONTRIBUTING
+
+If you are looking to open your project to more public contributions, it is a good idea to include contributing guidelines. This could take the form of a "CONTRIBUTING.md" file or a subsection of your README.
+
+Contributing guidelines are important to maintain consistency across the way people work on a project. It is important to establish conventions about the important things while avoiding excessive constraints and bureaucracy that would make contributing a pain. Important things include efficient and effective communication.
 
 ## Additional Considerations
 
