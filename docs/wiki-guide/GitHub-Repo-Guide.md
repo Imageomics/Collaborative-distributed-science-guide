@@ -84,7 +84,7 @@ Providing this file is as simple as copying the below example and filling in you
 You can check your CITATION.cff file prior to upload using this [validator tool](https://www.yamllint.com/).
 
 !!! note "Note"
-    - When adding a DOI to your citation (`doi`), be sure to use the version-agnostic DOI from Zenodo. Since the DOI is not generated until _after_ the release, this ensures there will never be an "incorrect" DOI associated to the release&mdash;correct version reference is ensured through the `version` key, which should always be updated ***before*** generating a new release.
+    - When adding a DOI to your citation (`doi`), be sure to use the version-agnostic DOI from Zenodo. Since the DOI is not generated until _after_ the release, this ensures there will never be an "incorrect" DOI associated to the release&mdash;correct version reference is ensured through the `version` key, which should always be updated _**before**_ generating a new release.
     - Subcategories of `preferred-citation` do not get bullet points, but the first subcategory of `references` must be bulleted (as below).
     - This is generally intended as a reference for your code. Preferred citation can be used for the paper, though it is better to ask in the `README` that someone cites _both_ and provide the paper reference there (only the `preferred-citation` will show up to be copied from the citation box if it is included).
 
