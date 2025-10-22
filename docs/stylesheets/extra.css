@@ -23,3 +23,97 @@ based on this suggestion: https://github.com/squidfunk/mkdocs-material/discussio
   height: 2.8rem;
   width: 2.8rem;
 }
+
+/* Define ABC colors for theme */
+body {
+  --color-turquoise: #4fb797;
+  --color-turquoise-10: #4fb7971a; /* 10% alpha */
+  --color-grey-blue: #667faf;
+  --color-gb-contrast: #96ADCD; /* custom similar grey-blue for dark mode contrast */
+  --color-dark-grey-blue: #2d3c58;
+  --color-abc-green: #73ab4e;
+  --color-abc-green-10: #73ab4e1a; /* 10% alpha */
+  --color-abc-a-bg: #4e70b3; /* ABC Logo "A" background color */
+}
+
+/* Light mode colors */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        var(--color-grey-blue);
+  --md-accent-fg-color:         var(--color-turquoise);
+}
+
+/* Set admonition (Note) colors to stand out better */
+.md-typeset .admonition.note, .md-typeset details.note {
+    border-color: var(--color-turquoise);
+    box-shadow: var(--color-turquoise-10);
+}
+
+/* icon color */
+.md-typeset .admonition.note > .admonition-title::before {
+    background-color: var(--color-turquoise);
+}
+
+/* shaded part (title/heading) */
+.md-typeset .note>.admonition-title,.md-typeset .note>summary {
+    background-color: var(--color-turquoise-10);
+}
+
+/* Set admonition (question) colors */
+.md-typeset .admonition.question, .md-typeset details.question {
+    border-color: var(--color-abc-green);
+    box-shadow: var(--color-abc-green-10);
+}
+
+/* icon color */
+.md-typeset .admonition.question > .admonition-title::before {
+    background-color: var(--color-abc-green);
+}
+
+/* shaded part (title/heading) */
+.md-typeset .question>.admonition-title,.md-typeset .question>summary {
+    background-color: var(--color-abc-green-10);
+}
+
+/* Set URL colors */
+/* Content URLs */
+[data-md-color-scheme="default"] .md-typeset a {
+  color: var(--color-abc-a-bg);
+}
+
+[data-md-color-scheme="default"] .md-typeset a:hover {
+  color: var(--color-turquoise);
+}
+
+/* Navigation URL (side panel contents)
+  to better distinguish from those that are above */
+[data-md-color-scheme="default"] .md-nav .md-nav__link--active {
+  color: var(--color-abc-a-bg);
+}
+
+[data-md-color-scheme="default"] .md-nav .md-nav__link--active:hover {
+  color: var(--color-turquoise);
+}
+
+/* Dark mode colors */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        var(--color-dark-grey-blue);
+  --md-accent-fg-color:         var(--color-turquoise);
+}
+
+/* Dark mode custom link color */
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: var(--color-gb-contrast);
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: var(--color-turquoise);
+}
+
+/* Dark mode custom active link color (side panel) */
+[data-md-color-scheme="slate"] .md-nav .md-nav__link--active {
+  color: var(--color-gb-contrast);
+}
+
+[data-md-color-scheme="slate"] .md-nav .md-nav__link--active:hover {
+  color: var(--color-turquoise);
+}
