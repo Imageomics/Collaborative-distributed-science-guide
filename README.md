@@ -1,4 +1,4 @@
-# Collaborative Distributed Science Guide
+# Collaborative Distributed Science Guide [![DOI](https://zenodo.org/badge/1038590952.svg)](https://doi.org/10.5281/zenodo.17210328)
 
 Welcome to the Collaborative Distributed Science Guide!
 
