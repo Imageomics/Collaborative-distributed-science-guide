@@ -49,3 +49,4 @@ message: "If you find these docs helpful in your research, please cite them as b
 repository-code: "https://github.com/Imageomics/Collaborative-distributed-science-guide"
 title: "Collaborative Distributed Science Guide"
 version: "1.1.0"
+doi: "10.5281/zenodo.17210328"
