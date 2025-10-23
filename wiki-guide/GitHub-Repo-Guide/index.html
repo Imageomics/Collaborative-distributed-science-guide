@@ -665,6 +665,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    <span class="md-ellipsis">
+      CITATION
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -684,15 +693,6 @@
   <a href="#contributing" class="md-nav__link">
     <span class="md-ellipsis">
       CONTRIBUTING
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#citation" class="md-nav__link">
-    <span class="md-ellipsis">
-      CITATION
     </span>
   </a>
   
@@ -1839,6 +1839,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    <span class="md-ellipsis">
+      CITATION
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1858,15 +1867,6 @@
   <a href="#contributing" class="md-nav__link">
     <span class="md-ellipsis">
       CONTRIBUTING
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#citation" class="md-nav__link">
-    <span class="md-ellipsis">
-      CITATION
     </span>
   </a>
   
@@ -2026,6 +2026,7 @@
 <li><a href="#license">LICENSE.md</a></li>
 <li><a href="#gitignore">.gitignore</a></li>
 <li><a href="#software-requirements-file">software requirements</a></li>
+<li><a href="#citation">CITATION.cff</a></li>
 </ul>
 <p>More <a href="#recommended-files">recommendations</a> are discussed below.</p>
 <h3 id="readme">README<a class="headerlink" href="#readme" title="Permanent link">¶</a></h3>
@@ -2070,18 +2071,15 @@
 <h3 id="software-requirements-file">Software Requirements File<a class="headerlink" href="#software-requirements-file" title="Permanent link">¶</a></h3>
 <p>It is also advisable to include a machine-readable file with minimal software requirements for your project. For Python projects, this often takes the form of a <code>requirements.txt</code> file containing the packages and their versions that were used (eg., <code>pandas==2.0.1</code>). If you use <code>conda</code>, you may instead opt for an <code>environment.yml</code>. These are essential to ensuring the reproducibility and interoperability of your work (by yourself and others). Note that they should <em><strong>not</strong></em> be listed in the README.</p>
 <p>For more information on managing these environments and generating such files programmatically, see the wiki entry <a href="../Virtual-Environments/">Virtual Environments</a>.</p>
-<h2 id="recommended-files">Recommended Files<a class="headerlink" href="#recommended-files" title="Permanent link">¶</a></h2>
-<p>Though the following files are not included in every repository and do not have a simple selection process integrated into GitHub, they are extremely important (if not essential) to maintaining FAIR principles and reproducibility in projects, as well as ensuring proper attribution for your work.</p>
-<h3 id="contributing">CONTRIBUTING<a class="headerlink" href="#contributing" title="Permanent link">¶</a></h3>
-<p>If you are looking to open your project to more public contributions, it is a good idea to include contributing guidelines. This could take the form of a "CONTRIBUTING.md" file or a subsection of your README.</p>
-<p>Contributing guidelines are important to maintain consistency across the way people work on a project. It is important to establish conventions about the important things while avoiding excessive constraints and bureaucracy that would make contributing a pain. Important things include efficient and effective communication.</p>
 <h3 id="citation">CITATION<a class="headerlink" href="#citation" title="Permanent link">¶</a></h3>
 <p>Make it easier for people to cite your project by including a <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files">CITATION.cff file</a>; you can copy-paste the template below.</p>
-<p>As with journal publications, we expect to be cited when someone uses our code. To facilitate proper attribution, GitHub will automatically read a <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files">CITATION.cff file</a> and display a link to "cite this repository". Providing this file is as simple as filling your information into one of their example files and uploading it to your repo. More examples and information about the Citation File Format can be found on the <a href="https://github.com/citation-file-format/citation-file-format">citation-file-format repo</a>, including helpful <a href="https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench">related tools</a>.</p>
+<p>As with journal publications, we expect to be cited when someone uses our code. To facilitate proper attribution, GitHub will automatically read a <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files">CITATION.cff file</a> and display a link to "cite this repository". This file is also used to populate metadata fields in a <a href="https://zenodo.org/">Zenodo</a> record when <a href="../DOI-Generation/#2-generate-a-doi-with-zenodo">auto-generating a DOI</a>. As with any other component of your project, this file may change over the project's lifespan (see <a href="docs/wiki-guide/Digital-Product-Lifecycle.md">Digital Product Life Cycle</a> for details), but it should be present and updated before any release.</p>
+<p>Providing this file is as simple as copying the below example and filling in your information before uploading it to your repo. More examples and information about the Citation File Format can be found on the <a href="https://github.com/citation-file-format/citation-file-format">citation-file-format repo</a>, including helpful <a href="https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench">related tools</a>.</p>
 <p>You can check your CITATION.cff file prior to upload using this <a href="https://www.yamllint.com/">validator tool</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
+<li>When adding a DOI to your citation (<code>doi</code>), be sure to use the version-agnostic DOI from Zenodo. Since the DOI is not generated until <em>after</em> the release, this ensures there will never be an "incorrect" DOI associated to the release—correct version reference is ensured through the <code>version</code> key, which should always be updated <em><strong>before</strong></em> generating a new release.</li>
 <li>Subcategories of <code>preferred-citation</code> do not get bullet points, but the first subcategory of <code>references</code> must be bulleted (as below).</li>
 <li>This is generally intended as a reference for your code. Preferred citation can be used for the paper, though it is better to ask in the <code>README</code> that someone cites <em>both</em> and provide the paper reference there (only the <code>preferred-citation</code> will show up to be copied from the citation box if it is included).</li>
 </ul>
@@ -2151,7 +2149,7 @@
 </span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="nt">repository-code</span><span class="p">:</span><span class="w"> </span><span class="s">"https://github.com/Imageomics/&lt;repo&gt;"</span>
 </span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">"&lt;repo</span><span class="nv"> </span><span class="s">title&gt;"</span>
 </span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;release version&gt;</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="nt">doi</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;DOI from Zenodo&gt;</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="nt">doi</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;DOI from Zenodo&gt;</span><span class="w">    </span><span class="c1"># version agnostic DOI</span>
 </span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">software</span>
 </span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="nt">preferred-citation</span><span class="p">:</span>
 </span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">article</span>
@@ -2176,6 +2174,11 @@
 </span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44"></a><span class="w">    </span><span class="nt">doi</span><span class="p">:</span><span class="w"> </span>
 </span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45"></a><span class="w">    </span><span class="nt">date-released</span><span class="p">:</span>
 </span></code></pre></div></td></tr></tbody></table></div>
+<h2 id="recommended-files">Recommended Files<a class="headerlink" href="#recommended-files" title="Permanent link">¶</a></h2>
+<p>Though the following files are not included in every repository and do not have a simple selection process integrated into GitHub, they are extremely important (if not essential) to maintaining FAIR principles and reproducibility in projects, as well as ensuring proper attribution for your work.</p>
+<h3 id="contributing">CONTRIBUTING<a class="headerlink" href="#contributing" title="Permanent link">¶</a></h3>
+<p>If you are looking to open your project to more public contributions, it is a good idea to include contributing guidelines. This could take the form of a "CONTRIBUTING.md" file or a subsection of your README.</p>
+<p>Contributing guidelines are important to maintain consistency across the way people work on a project. It is important to establish conventions about the important things while avoiding excessive constraints and bureaucracy that would make contributing a pain. Important things include efficient and effective communication.</p>
 <h2 id="additional-considerations">Additional Considerations<a class="headerlink" href="#additional-considerations" title="Permanent link">¶</a></h2>
 <h3 id="formatting-and-naming-conventions">Formatting and Naming Conventions<a class="headerlink" href="#formatting-and-naming-conventions" title="Permanent link">¶</a></h3>
 <h4 id="dates-and-times">Dates and Times<a class="headerlink" href="#dates-and-times" title="Permanent link">¶</a></h4>
