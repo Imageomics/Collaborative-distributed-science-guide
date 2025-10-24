@@ -153,7 +153,7 @@ When using the Zenodo-GitHub integration for [automatic DOI generation](docs/wik
 A `.zenodo.json` can be created by applying [cffconvert](https://github.com/citation-file-format/cffconvert) to your `CITATION.cff` (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the [Zenodo dev guide](https://developers.zenodo.org/#representation)). Alterntatively, The example below can simply be copied into a new file and updated with the appropriate information (comments should be removed prior to upload).
 
 !!! note
-  The `publication_date` and `version` will need to be updated along with the `CITATION.cff` for each release.
+    The `publication_date` and `version` will need to be updated along with the `CITATION.cff` for each release.
 
 ```json
 {
