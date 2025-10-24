@@ -69,15 +69,19 @@ When creating a new record on Zenodo, please ensure that other members of your p
 
 Congratulations, your repository has been archived on Zenodo! Now, how do you get the nice badge to display on your GitHub `README` so everyone knows it has been archived?
 
-1. Navigate to your account settings and select "GitHub" and find the repo that has just been updated.
+1. Navigate to your account settings and select "GitHub" (see earlier screenshot at [automatic generation](#automatic-generation) for what the page looks like).
 
-    ![Screenshot of GitHub Integration enabled repos with their DOI badges next to their names](images/doi-generation/enabled_repos_badges.png)
+2. Find the repo that has just been updated in the "Enabled Repositories" list (we'll use this guide's repo for the example), and click on the badge next to the repo's name:
 
-2. Click on the badge next to the repo for which you need to add the badge, the pop up will look something like this:
+    ![Screenshot of GitHub Integration enabled repos with their DOI badges next to their names, the DOI badge next to the collaborative distributed science guide is circled](images/doi-generation/enabled_repos_badges.png)
 
-    ![Screenshot of Zenodo DOI badge rendering options, only Markdown version fully shown](images/doi-generation/badge-markdown.png)
+    The pop up will look something like this:
+
+    ![Screenshot of Zenodo DOI badge rendering options, only Markdown version fully shown: '[![DOI](https://zenodo.org/badge/1038590952.svg)](https://doi.org/10.5281/zenodo.17210328)'](images/doi-generation/badge-markdown.png)
 
 3. Copy the Markdown text and paste it next to your `README` title. Note that the DOI URL should be the _version agnostic_ DOI (this is the one you will add to your `CITATION.cff`, as noted in the [GitHub Repo Guide](GitHub-Repo-Guide.md#citation))
+
+    ![Screenshot of collaborative distributed science guide repo README file header in the GitHub UI with the badge text from above next to the title](images/doi-generation/README-badge-paste.png)
 
 This only has to be done once; using the version agnostic DOI with the general SVG means the badge will be updated to always display the DOI of the latest release and it will link to that Zenodo record.
 
