@@ -41,12 +41,7 @@ When your GitHub and Zenodo accounts are linked, there will be a list of availab
 
 When automatically generating a DOI with Zenodo, it uses information provided in your `CITATION.cff` file to populate the metadata for the record. However, there is important information that is not supported through this integration despite its inclusion in the `CITATION.cff` format in some cases.
 
-If your repository is likely to be updated repeatedly (i.e., generating new releases), then you may consider adding a `.zenodo.json` to preserve the remaining metadata on release sync with Zenodo for DOI. This metadata includes grant (funding) information, references (which may be included in your `CITATION.cff`), and a description of your repository/code.
-
-A `.zenodo.json` can be created by applying [cffconvert](https://github.com/citation-file-format/cffconvert) to your `CITATION.cff` (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the [Zenodo dev guide](https://developers.zenodo.org/#representation)).
-The `publication_date` and `version` will need to be updated along with the `CITATION.cff` for each release.
-!!! example "Example `.zenodo.json`"
-    An example of this is the [Andromeda Zenodo JSON](https://github.com/Imageomics/Andromeda/blob/main/.zenodo.json). We also recommend including format tests following the example in this [PR](https://github.com/Imageomics/Andromeda/pull/120).
+If your repository is likely to be updated repeatedly (i.e., generating new releases), then you may consider adding a `.zenodo.json` to preserve the remaining metadata on release sync with Zenodo for DOI. This metadata includes grant (funding) information, references (which may be included in your `CITATION.cff`), associated paper(s), and a description of your repository/code. Details and a sample file structure are provided in the [Zenodo Metadata section](docs/wiki-guide/GitHub-Repo-Guide.md#zenodo-metadata) of the GitHub Repo Guide.
 
 _Alternatively_, this information can be updated manually on the Zenodo page for the DOI record. When logged in to Zenodo, a large orange "Edit" button will appear in the top right (as in the image below). There is the ability to save as you go (without publishing the metadata changes) and an additional option to share a link with collaborators to view the suggested record information.
 
@@ -61,7 +56,10 @@ _Alternatively_, this information can be updated manually on the Zenodo page for
 
 #### Manual Generation
 
-Building on the alternate edit options, there is also the option to simply generate one or all of your releases through a direct upload to Zenodo's site. Mixing the two methods is not advisable and may require reaching out to Zenodo to have them manually re-aligned to each other. Automatic generation through the GitHub integration is the recommended approach since it will generate an updated DOI on each release and create easier connections.
+Building on the alternate edit options, there is also the option to simply generate one or all of your releases through a direct upload to Zenodo's site. Automatic generation through the GitHub integration is the recommended approach since it will generate an updated DOI on each release and create easier connections.
+
+!!! warning
+    Do **not** mix the two methods. One must start with the GitHub integration, otherwise two separate records will be created. If a repo already has releases prior to turning on the GitHub integration, one can contact Zenodo to have them import the earlier releases as well. This is also another motivator for setting up the [requisite files in a GitHub repo](docs/wiki-guide/GitHub-Repo-Guide.md#zenodo-metadata) before the first release.
 
 #### Access Management
 
