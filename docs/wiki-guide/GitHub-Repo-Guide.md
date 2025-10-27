@@ -189,7 +189,7 @@ A `.zenodo.json` can be created by applying [cffconvert](https://github.com/cita
 ```
 
 !!! example "Example `.zenodo.json`"
-    The [Zenodo JSON for BioCLIP 2](https://github.com/Imageomics/bioclip-2/blob/main/.zenodo.json) provides an example that includes a grant, references, and an associated paper (`related_identifiers`), which is also listed under `notes` [for additional citation](https://zenodo.org/records/17049307). We also recommend including [this format test workflow](https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/.github/workflows/validate-zenodo.yaml), which will run if either the `.zenodo.json` or the workflow itself is edited.
+    The [Zenodo JSON for BioCLIP 2](https://github.com/Imageomics/bioclip-2/blob/main/.zenodo.json) provides an example that includes a grant, references, and an associated paper (`related_identifiers`), which is also listed under `notes` [for additional citation](https://zenodo.org/records/17049307). We also recommend including [this format validation workflow](https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/.github/workflows/validate-zenodo.yaml), which will run if either the `.zenodo.json` or the workflow itself is edited.
 
 ## Additional Considerations
 
