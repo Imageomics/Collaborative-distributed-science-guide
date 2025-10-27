@@ -698,6 +698,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#zenodo-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zenodo Metadata
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1872,6 +1881,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#zenodo-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zenodo Metadata
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2179,6 +2197,48 @@
 <h3 id="contributing">CONTRIBUTING<a class="headerlink" href="#contributing" title="Permanent link">¶</a></h3>
 <p>If you are looking to open your project to more public contributions, it is a good idea to include contributing guidelines. This could take the form of a "CONTRIBUTING.md" file or a subsection of your README.</p>
 <p>Contributing guidelines are important to maintain consistency across the way people work on a project. It is important to establish conventions about the important things while avoiding excessive constraints and bureaucracy that would make contributing a pain. Important things include efficient and effective communication.</p>
+<h3 id="zenodo-metadata">Zenodo Metadata<a class="headerlink" href="#zenodo-metadata" title="Permanent link">¶</a></h3>
+<p>When using the Zenodo-GitHub integration for <a href="docs/wiki-guide/DOI-Generation.md#automatic-generation">automatic DOI generation</a>, tracking metadata beyond the basics (authors, keywords, title, etc.) requires manual updates to the Zenodo record. The solution for this is to include a <code>.zenodo.json</code> file to keep track of this information (e.g., grant funding and references).</p>
+<p>A <code>.zenodo.json</code> can be created by applying <a href="https://github.com/citation-file-format/cffconvert">cffconvert</a> to your <code>CITATION.cff</code> (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the <a href="https://developers.zenodo.org/#representation">Zenodo dev guide</a>). Alterntatively, The example below can simply be copied into a new file and updated with the appropriate information (comments should be removed prior to upload).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>publication_date</code> and <code>version</code> will need to be updated along with the <code>CITATION.cff</code> for each release.</p>
+</div>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nt">"creators"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">      </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">          </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"family-names, given-names"</span><span class="p">,</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">          </span><span class="nt">"orcid"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">          </span><span class="nt">"affiliation"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span><span class="p">},</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">      </span><span class="p">{</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">          </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"family-names, given-names"</span><span class="p">,</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">          </span><span class="nt">"orcid"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">          </span><span class="nt">"affiliation"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="p">],</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w"> </span><span class="c1">// Ex: abstract from the citation, HTML can be used for formatting</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="nt">"keywords"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">  </span><span class="c1">// Add the same list of keywords as in your CITATION.cff</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">      </span><span class="s2">"imageomics"</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">    </span><span class="p">],</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">    </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;repo title&gt;"</span><span class="p">,</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">    </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;release version&gt;"</span><span class="p">,</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">    </span><span class="nt">"license"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;license&gt;"</span><span class="p">,</span><span class="w">           </span><span class="c1">// Check docs for codes: https://developers.zenodo.org/#representation</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="nt">"publication_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"YYYY-MM-DD"</span><span class="p">,</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">    </span><span class="nt">"grants"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"021nxhr62::2118240"</span><span class="w">  </span><span class="c1">// Imageomics (&lt;NSF code&gt;::&lt;Imageomics Grant #&gt;)</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">        </span><span class="p">},</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"021nxhr62::2330423"</span><span class="w">  </span><span class="c1">// ABC NSF grant, NSERC requires manual update</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">    </span><span class="p">]</span><span class="w"> </span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="p">}</span>
+</span></code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Example <code>.zenodo.json</code></p>
+<p>The <a href="https://github.com/Imageomics/bioclip-2/blob/main/.zenodo.json">Zenodo JSON for BioCLIP 2</a> provides an example that includes a grant, references, and an associated paper (<code>related_identifiers</code>), which is also listed under <code>notes</code> <a href="https://zenodo.org/records/17049307">for additional citation</a>. We also recommend including <a href="https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/.github/workflows/validate-zenodo.yaml">this format validation workflow</a>, which will run if either the <code>.zenodo.json</code> or the workflow itself is edited.</p>
+</div>
 <h2 id="additional-considerations">Additional Considerations<a class="headerlink" href="#additional-considerations" title="Permanent link">¶</a></h2>
 <h3 id="formatting-and-naming-conventions">Formatting and Naming Conventions<a class="headerlink" href="#formatting-and-naming-conventions" title="Permanent link">¶</a></h3>
 <h4 id="dates-and-times">Dates and Times<a class="headerlink" href="#dates-and-times" title="Permanent link">¶</a></h4>
@@ -2211,11 +2271,11 @@
 <p>For more information on creating, merging, and deleting branches, see the <a href="../The-GitHub-Workflow/">GitHub Workflow Guide</a>.</p>
 <h2 id="general-repository-structure">General Repository Structure<a class="headerlink" href="#general-repository-structure" title="Permanent link">¶</a></h2>
 <p>In addition to the <a href="#standard-files">standard files</a> recommended for every repo, you will likely have some code, notebooks, and data. For an easily accessible and readable repo, it is good to organize these files within a clear directory (folder) structure, such as</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Project_Directory
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    - scripts
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    - notebooks
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    - src
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    - data
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Project_Directory
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    - scripts
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    - notebooks
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    - src
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    - data
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
