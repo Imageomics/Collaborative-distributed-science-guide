@@ -46,5 +46,5 @@ jobs:
           if [[ -n $(git status -s) ]]; then
             git add .
             git commit -m "style: auto-fix markdown formatting"
-            git push
+            git push origin HEAD:${{ github.head_ref }}
           fi
