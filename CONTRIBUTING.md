@@ -177,7 +177,12 @@ chore: update mkdocs dependencies
 
 ### Linting
 
-The project uses [markdownlint](https://github.com/DavidAnson/markdownlint) with configuration in `.markdownlint.json`. Key settings:
+The project uses [markdownlint](https://github.com/DavidAnson/markdownlint) with configuration in `.markdownlint.json`.
+
+**Automated Checks:**
+We have a GitHub Action that checks for formatting errors on Pull Requests. To avoid flagging legacy issues, **it only checks files that you have modified.**
+
+**Key Rules:**
 
 - 4-space indentation for lists (`MD007`).
 - No hard tab restrictions disabled.
@@ -186,13 +191,19 @@ The project uses [markdownlint](https://github.com/DavidAnson/markdownlint) with
 - Allowed code blocks without language specification (`MD040`).
 - Allow fenced code blocks, as this commonly errors when indented (see [discussion](https://github.com/DavidAnson/markdownlint/issues/327)).
 
-For faster PR review, you may want to run linting locally; we do have a PR Action in place as well. First install markdownlint, then run
+**Local Testing**
+For faster PR review, you may want to run linting locally. We recommend installing `markdownlint-cli2` or the VS Code extension.
 
-```console
-markdownlint -c .markdownlint.json -f docs/wiki-guide/
+```bash
+# Install
+npm install markdownlint-cli2 --global
+# Run on the specific file you are editing
+markdownlint-cli2 "docs/path/to/your/file.md"
+# Fix simple errors automatically
+markdownlint-cli2 --fix "docs/path/to/your/file.md"
 ```
 
-The `-f` resolves simple formatting issues, and alerts will be raised for more complicated linter style rules (e.g., referencing a link as `[here](URL)` will produce the line: `<filename>.md:191:2 MD059/descriptive-link-text Link text should be descriptive [Context: "[here]"]`).
+The `--fix` resolves simple formatting issues, and alerts will be raised for more complicated linter style rules (e.g., referencing a link as `[here](URL)` will produce the line: `<filename>.md:191:2 MD059/descriptive-link-text Link text should be descriptive [Context: "[here]"]`).
 
 ### Content Review
 
