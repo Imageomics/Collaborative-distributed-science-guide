@@ -192,7 +192,7 @@ We have a GitHub Action that checks for formatting errors on Pull Requests. To f
 - Allow fenced code blocks, as this commonly errors when indented (see [discussion](https://github.com/DavidAnson/markdownlint/issues/327)).
 
 **Local Testing**
-For faster PR review, you may want to run linting locally. We recommend installing `markdownlint-cli2` or the VS Code extension.
+For faster PR review, you may want to run linting locally. We recommend installing `markdownlint-cli` or the VS Code extension.
 
 ```console
 markdownlint -c .markdownlint.json -f docs/wiki-guide/
