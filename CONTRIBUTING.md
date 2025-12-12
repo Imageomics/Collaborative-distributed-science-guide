@@ -194,16 +194,11 @@ We have a GitHub Action that checks for formatting errors on Pull Requests. To f
 **Local Testing**
 For faster PR review, you may want to run linting locally. We recommend installing `markdownlint-cli2` or the VS Code extension.
 
-```bash
-# Install
-npm install markdownlint-cli2 --global
-# Run on the specific file you are editing
-markdownlint-cli2 "docs/path/to/your/file.md"
-# Fix simple errors automatically
-markdownlint-cli2 --fix "docs/path/to/your/file.md"
+```console
+markdownlint -c .markdownlint.json -f docs/wiki-guide/
 ```
 
-The `--fix` resolves simple formatting issues, and alerts will be raised for more complicated linter style rules (e.g., referencing a link as `[here](URL)` will produce the line: `<filename>.md:191:2 MD059/descriptive-link-text Link text should be descriptive [Context: "[here]"]`).
+The `-f` resolves simple formatting issues, and alerts will be raised for more complicated linter style rules (e.g., referencing a link as `[here](URL)` will produce the line: `<filename>.md:191:2 MD059/descriptive-link-text Link text should be descriptive [Context: "[here]"]`).
 
 ### Content Review
 
