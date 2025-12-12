@@ -180,7 +180,7 @@ chore: update mkdocs dependencies
 The project uses [markdownlint](https://github.com/DavidAnson/markdownlint) with configuration in `.markdownlint.json`.
 
 **Automated Checks:**
-We have a GitHub Action that checks for formatting errors on Pull Requests. To follow best practices, **it only checks files that you have modified.**
+We have a GitHub Action that checks for formatting errors on Pull Requests. To follow best practices, **it only checks files that you have modified.** If the check fails, click the **Details** link next to the status check to view the error logs and see exactly what needs fixing.
 
 **Key Rules:**
 
