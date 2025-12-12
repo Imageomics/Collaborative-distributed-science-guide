@@ -8,9 +8,6 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -32,19 +29,3 @@ jobs:
         with:
           globs: ${{ steps.changed-files.outputs.all_changed_files }}
           separator: ","
-          fix: true
-
-      # Check if anything was fixed, then Commit & Push
-      - name: Commit and push fixes
-        if: always() && steps.changed-files.outputs.any_changed == 'true'
-        run: |
-          # Configure the bot's identity
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          # Check if the linter modified any files
-          if [[ -n $(git status -s) ]]; then
-            git add .
-            git commit -m "style: auto-fix markdown formatting"
-            git push origin HEAD:${{ github.head_ref }}
-          fi
