@@ -42,6 +42,15 @@ body {
   --md-accent-fg-color:         var(--color-turquoise);
 }
 
+/* GitHub panel color (mobile and small screen, issue 18) */
+.md-nav__source {
+  background-color: var(--md-primary-fg-color);
+}
+
+.md-source {
+  background-color: var(--md-primary-fg-color);
+}
+
 /* Set admonition (Note) colors to stand out better */
 .md-typeset .admonition.note, .md-typeset details.note {
     border-color: var(--color-turquoise);
@@ -116,4 +125,17 @@ body {
 
 [data-md-color-scheme="slate"] .md-nav .md-nav__link--active:hover {
   color: var(--color-turquoise);
+}
+
+/* Small screen adjustments */
+@media screen and (max-width: 76.2344em) {
+  /* Dark mode custom active parent color (side panel) */
+  [data-md-color-scheme="slate"] .md-nav .md-nav__item--active > .md-nav__link {
+    color: var(--color-gb-contrast);
+  }
+  
+  /* Dark mode custom active parent hover color (side panel) */
+  [data-md-color-scheme="slate"] .md-nav .md-nav__item--active:hover > .md-nav__link {
+    color: var(--color-turquoise);
+  }
 }
