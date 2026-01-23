@@ -35,7 +35,15 @@ Once you've created your repo, populate your README (you can do this by clicking
     * Tools from other repos
     * Data for analysis
 
-For more inspiration on making an awesome README, check out [this list](https://github.com/matiassingers/awesome-readme).
+Some Imageomics repositories with nicely formulated READMEs are...
+
+* [BioCLIP 2](https://github.com/Imageomics/bioclip-2): a large project which includes data, model, the code, and a demo.
+    * It also builds on previous work; the repo models how to request citations (including references), and addresses the case of a multi-user/group license; this complexity is handled well through clarification of type and the inclusion of a `HISTORY.md` file.
+    * It also is re-used a lot within Imageomics as a base style.
+* [cautious-robot](https://github.com/Imageomics/cautious-robot) and [pybioclip](https://github.com/Imageomics/pybioclip/tree/1.1.0) (before the addition of a MkDocs site for documentation) are good examples of code or software-based projects.
+    * We want to emphasize that a project can start with a well-documented README and later grow to incorporate a documentation site as it becomes more complex (e.g., [pybioclip](https://github.com/Imageomics/pybioclip)).
+
+For more inspiration on making an awesome README, check out [this crowd-sourced list of awesome READMEs](https://github.com/matiassingers/awesome-readme).
 
 ### LICENSE
 
