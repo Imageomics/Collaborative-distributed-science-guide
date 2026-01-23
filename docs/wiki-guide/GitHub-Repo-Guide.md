@@ -19,6 +19,10 @@ For each repository, include the following files in the root directory as soon a
 
 More [recommendations](#recommended-files) are discussed below.
 
+!!! tip "Pro tip"
+    All these files, plus more essential and recommended elements for a comprehensive GitHub repo, are included in our [Code Checklist](Code-Checklist.md). Following the checklist ensures compliance with the FAIR Principles for research software.[^1]
+    [^1]: Barker, M., Chue Hong, N. P., Katz, D. S., Lamprecht, A. L., Martinez-Ortiz, C., Psomopoulos, F., Harrow, J., Castro, L. J., Gruenpeter, M., Martinez, P. A., & Honeyman, T. (2022). Introducing the FAIR Principles for research software. _Scientific data_, 9(1), 622. [URL](https://doi.org/10.1038/s41597-022-01710-x).
+
 ### README
 
 The `README.md` file is what everyone will notice first when they open your repository on GitHub. When creating your repo be sure to include a brief description, as this will populate the `About` field in the top right of your repo, as well as start your README with some text.
