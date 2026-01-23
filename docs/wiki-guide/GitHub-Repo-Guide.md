@@ -21,9 +21,9 @@ More [recommendations](#recommended-files) are discussed below.
 
 ### README
 
-The README.md file is what everyone will notice first when they open your repository on GitHub. When creating your repo be sure to include a brief description, as this will populate the `About` field in the top right of your repo, as well as start your README with some text.
+The `README.md` file is what everyone will notice first when they open your repository on GitHub. When creating your repo be sure to include a brief description, as this will populate the `About` field in the top right of your repo, as well as start your README with some text.
 
-Once you've created your repo, populate your README (you can do this by clicking on the file "README.md", then clicking the pencil at the top left to edit). Editing your README in the browser allows you to preview the formatting of the file before committing changes. The content of your README may vary based on the purpose or goal of your repo, but there are key elements that should always be included.
+Once you've created your repo, populate your README (you can do this by clicking on the file `README.md`, then clicking the pencil at the top left to edit). Editing your README in the browser allows you to preview the formatting of the file before committing changes. The content of your README may vary based on the purpose or goal of your repo, but there are key elements that should always be included.
 
 * Summary of the repo:
     * This could be a simple explanation of what the package or tool developed in your repo is intended to do,
@@ -58,7 +58,7 @@ For more information on how to choose a license and why it matters, see [Choose 
 
 #### 2. Add LICENSE.md to the repository
 
-Once a license has been chosen, add a LICENSE.md file to the root of the repository. An easy way to do this is using a GitHub-provided [license template](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). Do not forget to update necessary fields in the template.
+Once a license has been chosen, add a `LICENSE.md` file to the root of the repository. An easy way to do this is using a GitHub-provided [license template](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). Do not forget to update necessary fields in the template.
 
 ### GITIGNORE
 
@@ -89,7 +89,7 @@ As with journal publications, we expect to be cited when someone uses our code. 
 
 Providing this file is as simple as copying the below example and filling in your information before uploading it to your repo. More examples and information about the Citation File Format can be found on the [citation-file-format repo](https://github.com/citation-file-format/citation-file-format), including helpful [related tools](https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench).
 
-You can check your CITATION.cff file prior to upload using this [validator tool](https://www.yamllint.com/).
+You can check your `CITATION.cff` file prior to upload using this [validator tool](https://www.yamllint.com/).
 
 !!! note "Note"
     - When adding a DOI to your citation (`doi`), be sure to use the version-agnostic DOI from Zenodo. Since the DOI is not generated until _after_ the release, this ensures there will never be an "incorrect" DOI associated to the release&mdash;correct version reference is ensured through the `version` key, which should always be updated _**before**_ generating a new release.
@@ -150,7 +150,7 @@ Though the following files are not included in every repository and do not have 
 
 ### CONTRIBUTING
 
-If you are looking to open your project to more public contributions, it is a good idea to include contributing guidelines. This could take the form of a "CONTRIBUTING.md" file or a subsection of your README.
+If you are looking to open your project to more public contributions, it is a good idea to include contributing guidelines. This could take the form of a `CONTRIBUTING.md` file or a subsection of your README.
 
 Contributing guidelines are important to maintain consistency across the way people work on a project. It is important to establish conventions about the important things while avoiding excessive constraints and bureaucracy that would make contributing a pain. Important things include efficient and effective communication.
 
@@ -158,7 +158,7 @@ Contributing guidelines are important to maintain consistency across the way peo
 
 When using the Zenodo-GitHub integration for [automatic DOI generation](DOI-Generation.md#automatic-generation), tracking metadata beyond the basics (authors, keywords, title, etc.) requires manual updates to the Zenodo record. The solution for this is to include a `.zenodo.json` file to keep track of this information (e.g., grant funding and references).
 
-A `.zenodo.json` can be created by applying [cffconvert](https://github.com/citation-file-format/cffconvert) to your `CITATION.cff` (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the [Zenodo dev guide](https://developers.zenodo.org/#representation)). Alterntatively, The example below can simply be copied into a new file and updated with the appropriate information (comments should be removed prior to upload).
+A `.zenodo.json` can be created by applying [cffconvert](https://github.com/citation-file-format/cffconvert) to your `CITATION.cff` (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the [Zenodo dev guide](https://developers.zenodo.org/#representation)). Alternatively, The example below can simply be copied into a new file and updated with the appropriate information (comments should be removed prior to upload).
 
 !!! note
     The `publication_date` and `version` will need to be updated along with the `CITATION.cff` for each release.
