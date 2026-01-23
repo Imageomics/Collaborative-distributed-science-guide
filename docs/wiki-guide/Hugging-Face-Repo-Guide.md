@@ -23,7 +23,7 @@ Once you've created your repo, populate your README (you can do this online by s
 
 ##### 1. Select a license
 
-Alongside the appropriate stakeholders, select a license following the guidelines set forth in the [Imageomics Digital Products Release and Licensing Policy](Digital-products-release-licensing-policy.md). For Datasets, this would be public domain or terms no more restrictive than requiring attribution (e.g., [CC-BY](https://creativecommons.org/licenses/by/4.0/)); Models and Spaces should be released under a license that is [Open Source Initiative](https://opensource.org/licenses) (OSI) compliant.
+Alongside the appropriate stakeholders, select a license following the guidelines set forth in the [Digital Products Release and Licensing Policy](Digital-products-release-licensing-policy.md). For Datasets, this would be public domain or terms no more restrictive than requiring attribution (e.g., [CC-BY](https://creativecommons.org/licenses/by/4.0/)); Models and Spaces should be released under a license that is [Open Source Initiative](https://opensource.org/licenses) (OSI) compliant.
 
 !!! note "Remember"
     A public repository on Hugging Face with no license can be viewed and accessed by others, but unless the author associates a license, it is unclear what others are allowed to do with it legally. Adding an OSI license can help others feel comfortable building off your work!
