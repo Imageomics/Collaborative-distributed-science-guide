@@ -29,11 +29,17 @@ The `README.md` file is what everyone will notice first when they open your repo
 
 Once you've created your repo, populate your README (you can do this by clicking on the file `README.md`, then clicking the pencil at the top left to edit). Editing your README in the browser allows you to preview the formatting of the file before committing changes. The content of your README may vary based on the purpose or goal of your repo, but there are key elements that should always be included.
 
-Keep the following guiding principles in mind:
+#### Guiding Principles
 
-- It is iterative does not need to be perfect from the beginning. Be honest about the scope and maturity of the project.
+While crafting your repo, keep the following guiding principles in mind:
+
+- It is iterative; it does not need to be perfect from the beginning. Be honest about the scope and maturity of the project.
 - It should be _useful_ for the intended audience and optimized for scanning.
 - Give the audience "quick wins" to being productive with minimal examples or typical workflows rather than comprehensively covering every edge case.
+
+#### Key Elements
+
+Following the above principles, be sure to include
 
 - Summary of the repo:
     - This could be a simple explanation of what the package or tool developed in your repo is intended to do,
@@ -42,8 +48,10 @@ Keep the following guiding principles in mind:
     - Including installation of [dependencies](Virtual-Environments.md).
     - If your tool requires input be in a particular format, this would be included in the README. It would also help to include an example file demonstrating the format.
 - Information about the sources you've used (links and what they were used for), such as:
-    - Tools from other repos
-    - Data for analysis
+    - Tools from other repos.
+    - Data used for analysis.
+
+#### Examples
 
 Some Imageomics repositories with nicely formulated READMEs are...
 
