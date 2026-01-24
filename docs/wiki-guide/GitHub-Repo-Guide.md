@@ -11,11 +11,11 @@ Just joining or starting a new project and need a repository to store your work?
 
 For each repository, include the following files in the root directory as soon as possible; they can (and should) be instantiated when you create a new repository.
 
-* [README.md](#readme)
-* [LICENSE.md](#license)
-* [.gitignore](#gitignore)
-* [software requirements](#software-requirements-file)
-* [CITATION.cff](#citation)
+- [README.md](#readme)
+- [LICENSE.md](#license)
+- [.gitignore](#gitignore)
+- [software requirements](#software-requirements-file)
+- [CITATION.cff](#citation)
 
 More [recommendations](#recommended-files) are discussed below.
 
@@ -30,27 +30,28 @@ The `README.md` file is what everyone will notice first when they open your repo
 Once you've created your repo, populate your README (you can do this by clicking on the file `README.md`, then clicking the pencil at the top left to edit). Editing your README in the browser allows you to preview the formatting of the file before committing changes. The content of your README may vary based on the purpose or goal of your repo, but there are key elements that should always be included.
 
 Keep the following guiding principles in mind:
+
 - It is iterative does not need to be perfect from the beginning. Be honest about the scope and maturity of the project.
-- It should be *useful* for the intended audience and optimized for scanning.
+- It should be _useful_ for the intended audience and optimized for scanning.
 - Give the audience "quick wins" to being productive with minimal examples or typical workflows rather than comprehensively covering every edge case.
 
-* Summary of the repo:
-    * This could be a simple explanation of what the package or tool developed in your repo is intended to do,
-    * Or an abstract describing your research.
-* Detailed documentation on how to access and use the project software (User Guide).  
-    * Including installation of [dependencies](Virtual-Environments.md).
-    * If your tool requires input be in a particular format, this would be included in the README. It would also help to include an example file demonstrating the format.
-* Information about the sources you've used (links and what they were used for), such as:
-    * Tools from other repos
-    * Data for analysis
+- Summary of the repo:
+    - This could be a simple explanation of what the package or tool developed in your repo is intended to do,
+    - Or an abstract describing your research.
+- Detailed documentation on how to access and use the project software (User Guide).  
+    - Including installation of [dependencies](Virtual-Environments.md).
+    - If your tool requires input be in a particular format, this would be included in the README. It would also help to include an example file demonstrating the format.
+- Information about the sources you've used (links and what they were used for), such as:
+    - Tools from other repos
+    - Data for analysis
 
 Some Imageomics repositories with nicely formulated READMEs are...
 
-* [BioCLIP 2](https://github.com/Imageomics/bioclip-2): a large project which includes data, model, the code, and a demo.
-    * It also builds on previous work; the repo models how to request citations (including references), and addresses the case of a multi-user/group license; this complexity is handled well through clarification of type and the inclusion of a `HISTORY.md` file.
-    * It also is re-used a lot within Imageomics as a base style.
-* [cautious-robot](https://github.com/Imageomics/cautious-robot) and [pybioclip](https://github.com/Imageomics/pybioclip/tree/1.1.0) (before the addition of a MkDocs site for documentation) are good examples of code or software-based projects.
-    * We want to emphasize that a project can start with a well-documented README and later grow to incorporate a documentation site as it becomes more complex (e.g., [pybioclip](https://github.com/Imageomics/pybioclip)).
+- [BioCLIP 2](https://github.com/Imageomics/bioclip-2): a large project which includes data, model, the code, and a demo.
+    - It also builds on previous work; the repo models how to request citations (including references), and addresses the case of a multi-user/group license; this complexity is handled well through clarification of type and the inclusion of a `HISTORY.md` file.
+    - It also is re-used a lot within Imageomics as a base style.
+- [cautious-robot](https://github.com/Imageomics/cautious-robot) and [pybioclip](https://github.com/Imageomics/pybioclip/tree/1.1.0) (before the addition of a MkDocs site for documentation) are good examples of code or software-based projects.
+    - We want to emphasize that a project can start with a well-documented README and later grow to incorporate a documentation site as it becomes more complex (e.g., [pybioclip](https://github.com/Imageomics/pybioclip)).
 
 For more inspiration on making an awesome README, check out [this crowd-sourced list of awesome READMEs](https://github.com/matiassingers/awesome-readme).
 
@@ -216,21 +217,21 @@ A `.zenodo.json` can be created by applying [cffconvert](https://github.com/cita
 
 For interoperability and to avoid ambiguity, [dates and times should be reported](https://dataoneorg.github.io/Education/bestpractices/describe-formats-for) in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601).
 
-* For dates, this means `YYYY-MM-DD` (for ISO 8601 compliance, the dashes are required).
-* For times, use `THHMMSS` in 24-hour format.
-* For example, the moment when there were 60 seconds left before New Year 2000 would be `1999-12-31T235900`.
+- For dates, this means `YYYY-MM-DD` (for ISO 8601 compliance, the dashes are required).
+- For times, use `THHMMSS` in 24-hour format.
+- For example, the moment when there were 60 seconds left before New Year 2000 would be `1999-12-31T235900`.
 
 #### Branches
 
-* Primary branch: `main`
-* Other branches follow the pattern `category/reference/description`:
-    * **category**: `feature`, `bugfix`, `experiment`
-        * `feature` is for new functionality
-        * `bugfix` is for fixing errors
-        * `experiment` is for more open-ended work
-    * the associated issue (if no issue, put `no-ref`), formatted as `issue-NN`
-    * description: brief description, e.g., `solve-world-hunger`
-* Example: `git branch feature/issue-1/general-ai`
+- Primary branch: `main`
+- Other branches follow the pattern `category/reference/description`:
+    - **category**: `feature`, `bugfix`, `experiment`
+        - `feature` is for new functionality
+        - `bugfix` is for fixing errors
+        - `experiment` is for more open-ended work
+    - the associated issue (if no issue, put `no-ref`), formatted as `issue-NN`
+    - description: brief description, e.g., `solve-world-hunger`
+- Example: `git branch feature/issue-1/general-ai`
   
 #### Commits
 
