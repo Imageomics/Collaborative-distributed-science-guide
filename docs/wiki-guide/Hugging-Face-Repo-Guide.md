@@ -13,6 +13,9 @@ For each repository, include the following files and metadata in the root direct
 - [.gitignore](#gitignore)
 - [.gitattributes](#gitattributes)
 
+!!! note
+    Hugging Face does not support the use of a `CITATION.cff`. Instead, citation guidance is provided in the Citation Section of the [Dataset](HF_DatasetCard_Template_mkdocs.md) or [Model](HF_ModelCard_Template_mkdocs.md) card. When [generating a DOI on Hugging Face](DOI-Generation.md##1-generate-a-doi-on-hugging-face), author names must be added manually in the intended order for them to be displayed in the DOI "Cite this dataset" link.
+
 #### README
 
 The README.md file is generally referred to as either a Dataset or Model Card and is what everyone will notice first when they open your repository on Hugging Face. Choose the appropriate Imageomics-specific HF template ([model](HF_ModelCard_Template_mkdocs.md) or [dataset](HF_DatasetCard_Template_mkdocs.md)) to get started. Be sure to include a brief description and as much information as possible at the beginning. You can update this file as you go, so don't remove the recommended sections prior to completion. The templates include descriptions of many fields, Imageomics grant information, citation formatting, and some notes on HF-flavored markdown to get you started.
