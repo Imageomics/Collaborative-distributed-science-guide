@@ -31,7 +31,7 @@ Alongside the appropriate stakeholders, select a license following the guideline
 !!! note "Remember"
     A public repository on Hugging Face with no license can be viewed and accessed by others, but unless the author associates a license, it is unclear what others are allowed to do with it legally. Adding an OSI license can help others feel comfortable building off your work!
 
-Keep in mind that your available license options may also be limited by your data sources or base model. Data should not be republished where not explicitly warranted or required.[^1]
+For more information on how to choose a license and why it matters, see [Choose A License](https://choosealicense.com). Keep in mind that your available license options may also be limited by your data sources or base model. Data should not be republished where not explicitly warranted or required.[^1]
 
 [^1]: For instance, when working with images aggregated from multiple sources, a catalog of all images used with URLs to access the images and download instructions ([cautious-robot](Helpful-Tools-for-your-Workflow.md#cautious-robot) can help with this) respects the original source data producers interests. However, if you have processed the images in a resource-intensive pipeline and the image licenses allow, the _processed_ images should be published for ease of re-use. In this case, it is important to provide the citation for the source data as well.
 
