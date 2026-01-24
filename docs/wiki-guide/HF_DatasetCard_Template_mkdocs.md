@@ -1,6 +1,9 @@
 # Dataset Card Template
 
-Below are the Dataset Card templates for Imageomics and ABC. You can download or copy the appropriate dataset card content and paste it into a new Markdown file to create a README for your dataset. 
+Below are the Dataset Card templates for Imageomics and ABC. You can download or copy the appropriate dataset card content and paste it into a new Markdown file to create a README for your dataset.
+
+!!! tip "Pro tip"
+    Use the [Data Card Checklist](Data-Checklist.md) to help keep track of your progress.
 
 <details>
 <summary>Imageomics</summary>
