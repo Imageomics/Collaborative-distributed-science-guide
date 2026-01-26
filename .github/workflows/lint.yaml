@@ -23,7 +23,6 @@ jobs:
           files: '**/*.md'
           files_ignore: |
             docs/wiki-guide/HF_*_Template*.md
-            mkdocs.yaml
           separator: ","
 
       # This runs the linter ONLY on the files identified above
