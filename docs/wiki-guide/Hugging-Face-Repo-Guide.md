@@ -40,7 +40,7 @@ For more information on how to choose a license and why it matters, see [Choose 
 Once a license has been chosen (if not initialized with one), add the appropriate license identifier in the `yaml` portion of the README (the web UI generates a dropdown of recommendations under "Edit dataset/model card", [license identifiers](https://huggingface.co/docs/hub/en/repositories-licenses)).
 
 !!! note
-    Unlike in GitHub, a `LICENSE.md` file is not required. Instead, the license for the digital object is added through the `yaml` (for ease of API access) and further clarifications can be included in the License Section of the Dataset or Model card.
+    Unlike in GitHub, a `LICENSE.md` file is not supported. Instead, the license for the digital object is added through the `yaml` (for ease of API access) and further clarifications can be included in the License Section of the [Dataset](HF_DatasetCard_Template_mkdocs.md) or [Model](HF_ModelCard_Template_mkdocs.md) card.
 
 #### gitignore
 
