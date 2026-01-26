@@ -1,6 +1,5 @@
 # Test File for Markdownlint Config
 
-
 ## Rule MD007: Indentation (Should allow 4 spaces)
 
 * Level 1
@@ -12,8 +11,8 @@ This is an incredibly long line of text that exceeds the default 80-character li
 
 ## Rule MD026: Trailing Punctuation (Should allow only specific marks)
 
-### This header ends with a period.
 ### This header ends with a question mark?
+
 ### This header ends with an exclamation point!
 
 ## Rule MD040: Fenced Code Language (Should be ignored)
