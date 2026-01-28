@@ -60,7 +60,7 @@ Fast _Markdown_ formatter and linter. We use the [DavidAnson/markdownlint](https
 
 Syntax-aware prose linter for documentation, technical writing, and Markdown files. Unlike basic spell checkers, [errata-ai/vale](https://github.com/errata-ai/vale) enforces customizable style guides and writing rules, making it ideal for maintaining consistency across project documentation. You can install it with `brew install vale` on macOS, or see the [installation guide](https://vale.sh/docs/vale-cli/installation/) for other platforms.
 
-Vale comes with support for popular style guides like Google, Microsoft, and write-good, and you can create custom rules for your project's specific needs. It integrates well with version control workflows and can check documentation in various formats including Markdown, reStructuredText, HTML, and AsciiDoc.
+Vale comes with support for popular style guides like [Google](https://github.com/errata-ai/Google), [Microsoft](https://github.com/errata-ai/Microsoft), and [write-good](https://github.com/errata-ai/write-good), and you can create custom rules for your project's specific needs. It integrates well with version control workflows and can check documentation in various formats including Markdown, reStructuredText, HTML, and AsciiDoc.
 
 To lint documentation files, run:
 
