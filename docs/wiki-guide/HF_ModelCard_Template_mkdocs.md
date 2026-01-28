@@ -1,6 +1,9 @@
 # Model Card Template
 
-Below are the Model Card templates for Imageomics and ABC. You can download or copy the appropriate model card content and paste it into a new Markdown file to create a README for your model repo. 
+Below are the Model Card templates for Imageomics and ABC. You can download or copy the appropriate model card content and paste it into a new Markdown file to create a README for your model repo.
+
+!!! tip "Pro tip"
+    Use the [Model Card Checklist](Model-Checklist.md) to help keep track of your progress.
 
 <details>
 <summary>Imageomics</summary>

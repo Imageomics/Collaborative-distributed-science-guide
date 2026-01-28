@@ -17,9 +17,8 @@ description: # Add a short description (summary) of your dataset, this will rend
 
 NOTE: Add more tags (your particular animal, type of model and use-case, etc.).
 
-As with your GitHub Project repo, it is important to choose an appropriate license for your dataset. The default license is [CC0](https://creativecommons.org/publicdomain/zero/1.0/) (public domain dedication, see [Dryad's explanation of why to use CC0](https://blog.datadryad.org/2023/05/30/good-data-practices-removing-barriers-to-data-reuse-with-cc0-licensing/)). Alongside the appropriate stakeholders (eg., your PI, co-authors), select a license that is [Open Source Initiative](https://opensource.org/licenses) (OSI) compliant.
-For more information on how to choose a license and why it matters, see [Choose A License](https://choosealicense.com) and [A Quick Guide to Software Licensing for the Scientist-Programmer](https://doi.org/10.1371/journal.pcbi.1002598) by A. Morin, et al.
-See the [ABC Global Center policy for licensing](https://docs.google.com/document/d/1SlITG-r7kdJB6C8f4FCJ9Z7o7ccwldZoSRJKjhRAWVA/edit#heading=h.c1sxg0wsiqru) for more information.
+As with your GitHub Project repo, it is important to choose an appropriate license for your dataset. The default license is [CC0](https://creativecommons.org/publicdomain/zero/1.0/) (public domain dedication, see [Dryad's explanation of why to use CC0](https://blog.datadryad.org/2023/05/30/good-data-practices-removing-barriers-to-data-reuse-with-cc0-licensing/)). Alongside the appropriate stakeholders (eg., your PI, co-authors), select a license that is following the guidelines set forth in the [ABC Digital Products Release and Licensing Policy](https://ABC-Center.github.io/ABC-guide/wiki-guide/Digital-products-release-licensing-policy/). For Datasets, this would be public domain or terms no more restrictive than requiring attribution (e.g., [CC-BY](https://creativecommons.org/licenses/by/4.0/)).
+For more information on how to choose a license and why it matters, see [Choose A License](https://choosealicense.com). List of [HF license identifiers](https://huggingface.co/docs/hub/en/repositories-licenses) (for yaml).
 
 See more options for the above information by clicking "edit dataset card" on your repo.
 
