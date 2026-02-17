@@ -3,9 +3,9 @@
 [Hugging Face](https://hf.co/) offers numerous methods for interacting with and creating datasets. This page provides a basic overview with some recommendations specifically targeting image dataset uploads, though the principles are transferrable to other data types. We list these options&mdash;in order of increasing complexity&mdash;with some guidance, recommendations, and links out to the appropriate parts of the Hugging Face docs for the most up-to-date information available.
 
 1. [Web interface (UI)](#upload-a-dataset-with-the-web-interface): For smaller, simpler uploads.
-2. [Hugging Face Command Line Interface (CLI)](): For most use-cases, easy access from cluster.
-3. [Hugging Face API (python package)](): For when more fine-grained control than is acheivable with the CLI is needed.
-4. [Git/Git LFS](): Main use-case is when multiple PRs lead to merge conflicts&mdash;Hugging Face provides no other means for resolution.
+2. [Hugging Face Command Line Interface (CLI)](#upload-a-dataset-with-the-hugging-face-cli): For most use-cases, easy access from cluster.
+3. [Hugging Face API (python package)](#upload-a-dataset-with-hfapi): For when more fine-grained control than is achievable with the CLI is needed.
+4. [Git/Git LFS](#upload-a-dataset-with-git): Main use-case is when multiple PRs lead to merge conflicts&mdash;Hugging Face provides no other means for resolution.
 
 !!! info
     Some sections of the Hugging Face docs, such as for the `huggingface_hub`, has only version specific links for stable versions. In this case, if the link directs to an older version, there will be a banner to alert you to a newer version available, so keep an eye out for that updated version banner.
@@ -15,7 +15,7 @@
 All of these methods require authentication to edit datasets, ranging from passwords, to tokens, to SSH authentication, and all support editing **Public** (accessible to anyone on the internet) or **Private** (accessible only to members of the organization) repos. Two key notes on authentication:
 
 1. Private repositories are only visible if you are authenticated.
-2. If using tokens for access, be sure to create a [fine-grained token](), specifically for your needs.
+2. If using tokens for access, be sure to create a [fine-grained token](https://huggingface.co/docs/hub/en/security-tokens#what-are-user-access-tokens), specifically for your needs.
 
 ## Upload a Dataset with the Web Interface
 
@@ -129,7 +129,9 @@ See also instructions using the [datasets package](https://huggingface.co/docs/d
 
 ## Integrity Check
 
-Sometimes uploads fail partway through, leaving one or more files unuploaded. Unfortunately, it seems that there is not an easy solution to be alerted to these issues when not uploading through the UI. Additionally, using a glob pattern to set upload without a dry-run (in `git` terms, this would be running `git status` after adding files) can also lead to accidental exclusion. so we recommend the following integrity check after uploading a dataset.
+Sometimes uploads fail partway through, leaving one or more files un-uploaded. Unfortunately, it seems that there is not an easy solution to be alerted to these issues when not uploading through the UI. Additionally, using a glob pattern to set upload without a dry-run (in `git` terms, this would be running `git status` after adding files) can also lead to accidental exclusion. To catch these issues, we recommend the following integrity check after uploading a dataset[^1].
+
+[^1]: Note that Hugging Face does impose [tiered rate limits](https://huggingface.co/docs/hub/rate-limits#rate-limit-tiers) (as of September 2025).
 
 ```python
 import pandas as pd
@@ -149,4 +151,4 @@ df.shape[0]  # this should match the number of expected images
 ```
 
 !!! tip "Pro tip"
-    If you don't have a metadata file for your images, use the [sum-buddy package](Helpful-Tools-for-your-Workflow.md#sum-buddy) to generate one in your local file system. This can also be used as a metadata file for the dataset viewer as needed (see [image datasets docs](https://huggingface.co/docs/hub/en/datasets-image) for more information on setting this up). Similar optionsa are available for [audio](https://huggingface.co/docs/hub/en/datasets-audio) and [video](https://huggingface.co/docs/hub/en/datasets-video) datasets.
+    If you don't have a metadata file for your images, use the [sum-buddy package](Helpful-Tools-for-your-Workflow.md#sum-buddy) to generate one in your local file system. This can also be used as a metadata file for the dataset viewer as needed (see [image datasets docs](https://huggingface.co/docs/hub/en/datasets-image) for more information on setting this up). Similar options are available for [audio](https://huggingface.co/docs/hub/en/datasets-audio) and [video](https://huggingface.co/docs/hub/en/datasets-video) datasets.
