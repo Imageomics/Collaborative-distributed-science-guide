@@ -33,6 +33,8 @@ Primary pages to personalize are:
 - [Glossary for Imageomics](docs/wiki-guide/Glossary-for-Imageomics.md): this page should be updated to a topic relevant to your field or focus.
 - Templates should be updated for your organization (mainly the `Acknowledgements` sections, pre-filled URL suggestions, domain-specific suggestions and guidance).
 
+Additionally, you may wish to match the color scheme to your organization or group. This can be done by changing the preset values in [docs/stylesheets/extra.css](docs/stylesheets/extra.css). To check accessibility of color schemes, [tanaguru contrast finder](https://contrast-finder.tanaguru.com/result.html?foreground=%23667FAF&background=%231F2129&ratio=7&isBackgroundTested=false&algo=Rgb&distanceSort=asc) has good flexibility in how you provide the color and how they fix it (providing a similar alternate color with sufficient contrast). Everything following color definition can be removed if you prefer to use a predefined [MkDocs color scheme](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/).
+
 ## Contributing
 
 If you'd like to contribute to this guide, please read our [Contributing Guidelines](CONTRIBUTING.md) for information about our standards, development workflow, and submission process.
