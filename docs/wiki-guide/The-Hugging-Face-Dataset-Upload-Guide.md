@@ -1,6 +1,6 @@
 # Hugging Face Dataset Guide
 
-[Hugging Face](https://hf.co/) offers numerous methods for interacting with and creating datasets. This page provides a basic overview with some recommendations specifically targeting image dataset uploads, though the principles are transferrable to other data types. We list these options&mdash;in order of increasing complexity&mdash;with some guidance, recommendations, and links out to the appropriate parts of the Hugging Face docs for the most up-to-date information available.
+[Hugging Face](https://hf.co/) offers numerous methods for interacting with and creating datasets. This page provides a basic overview with some recommendations specifically targeting image dataset uploads, though the principles are transferrable to other data types. We list these options&mdash;in order of increasing complexity&mdash;with some guidance, recommendations, and links out to the appropriate parts of the Hugging Face docs for the most up-to-date information available. 
 
 1. [Web interface (UI)](#upload-a-dataset-with-the-web-interface): For smaller, simpler uploads.
 2. [Hugging Face Command Line Interface (CLI)](#upload-a-dataset-with-the-hugging-face-cli): For most use-cases, easy access from cluster.
@@ -8,7 +8,11 @@
 4. [Git/Git LFS](#upload-a-dataset-with-git): Main use-case is when multiple PRs lead to merge conflicts&mdash;Hugging Face provides no other means for resolution.
 
 !!! info
-    Some sections of the Hugging Face docs, such as for the `huggingface_hub`, has only version specific links for stable versions. In this case, if the link directs to an older version, there will be a banner to alert you to a newer version available, so keep an eye out for that updated version banner.
+    Some sections of the Hugging Face docs, such as for the `huggingface_hub`, have only version specific links for stable versions. In this case, if the link directs to an older version, there will be a banner to alert you to a newer version available, so keep an eye out for that updated version banner.
+
+Most of the content below is covered in various parts of [Hugging Face's Upload Guide](https://huggingface.co/docs/huggingface_hub/en/guides/upload); this page is provided as a summary reference mainly to determine which method might be best and link to the appropriate docs. Additionally, we include an [integrity check](#integrity-check) to help you ensure that your repo contains all the desired files after uploading through any of these methods.
+
+[HF tips and tricks for large uploads](https://huggingface.co/docs/huggingface_hub/en/guides/upload#tips-and-tricks-for-large-uploads).
 
 ## Note on Authentication
 
@@ -19,17 +23,21 @@ All of these methods require authentication to edit datasets, ranging from passw
 
 ## Upload a Dataset with the Web Interface
 
-In the Files and versions tab of the Dataset card, you can choose to add file in the hugging web interface.
+In the Files and Versions tab of the repository, you can select "Contribute" to add or create files or start a pull request directly from the web interface.
 
 ![Dataset repository Add file button](images/HF-dataset-upload/346190430-9e6cef9b-18ef-4d4a-84c5-1a3f75ac9336.png){ loading=lazy }
 
-- Smaller files (<100MB), distributed, not well organized, less files
-
+This method is fine for smaller files (<100MB), or dataset repositories that are distributed, not well organized, have less files. If you are uploading existing files, navigate to the target folder first.
 
 ## Upload a Dataset with the Hugging Face CLI
-- Bigger, more files, works from cluster
-- THINK this is a wrapper on the datasets package
-Which do you get on install??
+
+Hugging Face provides a comprehensive Command Line Interface (CLI) and corresponding [docs](https://huggingface.co/docs/huggingface_hub/en/guides/cli). Note that this is installed with the `huggingface_hub` python package, but can also be installed directly, then called with `hf <command>`.
+
+The Hugging Face CLI is the ideal method for larger datasets, with more files. It works directly from HPC clusters, such as OSC. Under the hood, [`hf upload`](https://huggingface.co/docs/huggingface_hub/en/guides/cli#hf-upload) uses the same upload functions described below, under [Upload a Dataset with HfApi](#upload-a-dataset-with-hfapi). 
+
+When uploading to a dataset, note that the repo type must be specified (`--repo-type=dataset`); this is also the case for spaces, since Hugging Face treats models as the default.
+
+There are specific [`hf datasets`](https://huggingface.co/docs/huggingface_hub/en/guides/cli#hf-datasets) and [`hf repo`](https://huggingface.co/docs/huggingface_hub/en/guides/cli#hf-repo) commands for more general queries and repo initialization.
 
 ## Upload a Dataset with HfApi
 
@@ -70,16 +78,13 @@ api.upload_folder(
 
 ## Upload a Dataset with Git
 
-### Install Git LFS
+Using Git to interact with Hugging Face requires installation of [Git LFS](https://git-lfs.com/), the [Hugging Face CLI](), and then enabling large file upload for the repo
 
-Follow instructions at <https://git-lfs.com/>
+Hugging Face provides details on [git vs http](https://huggingface.co/docs/huggingface_hub/en/concepts/git_vs_http), really using Git vs HfApi
 
-### Install the Hugging Face CLI
 
-```
-brew install huggingface-cli
-pip install -U "huggingface_hub[cli]"
-```
+Hugging Face has moved away from Git LFS, instead utilizing [Xet](https://huggingface.co/docs/hub/en/xet/index) for data storage and version control; this is [backwards compatible with LFS](https://huggingface.co/docs/hub/en/xet/legacy-git-lfs).
+
 
 ### Enable the repository to upload large files
 
@@ -87,15 +92,10 @@ pip install -U "huggingface_hub[cli]"
 huggingface-cli lfs-enable-largefiles <your local dataset>
 ```
 
-### Initialize Git LFS
-
-```
-git lfs install
-```
 
 ### Track large or binary files (e.g., .jpg files)
 
-Note that tabular data, such as CSVs, should **not** be tracked with `git lfs` unless they are too large to be tracked with `git`, i.e., if they are 100MB or larger (this is the [file size limit for GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-size-limits)).
+Note that tabular data, such as CSVs, should **not** be tracked with `git lfs` or `xet` (not in gitattributes... what's the distinction here?)unless they are too large to be tracked with `git`, i.e., if they are 100MB or larger (this is the [file size limit for GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-size-limits)).
 
 ```
 # Adds a line to .gitattributes, which Git uses to determine files managed by LFS
@@ -123,15 +123,16 @@ private = True  # if you want the repo private
 
 See also instructions using the [datasets package](https://huggingface.co/docs/datasets/create_dataset).
 
-
+[Merge conflicts](https://discuss.huggingface.co/t/how-to-fix-merge-conflicts-in-prs/160090)
 
 
 
 ## Integrity Check
 
-Sometimes uploads fail partway through, leaving one or more files un-uploaded. Unfortunately, it seems that there is not an easy solution to be alerted to these issues when not uploading through the UI. Additionally, using a glob pattern to set upload without a dry-run (in `git` terms, this would be running `git status` after adding files) can also lead to accidental exclusion. To catch these issues, we recommend the following integrity check after uploading a dataset[^1].
+Sometimes uploads fail partway through, leaving one or more files un-uploaded. Unfortunately, it seems that there is not an easy solution to be alerted to these issues when not uploading through the UI. Additionally, using a glob pattern to set upload without a dry-run[^1] (in `git` terms, this would be running `git status` after adding files) can also lead to accidental exclusion. To catch these issues, we recommend the following integrity check after uploading a dataset[^1].
 
-[^1]: Note that Hugging Face does impose [tiered rate limits](https://huggingface.co/docs/hub/rate-limits#rate-limit-tiers) (as of September 2025).
+[^1]: The Hugging Face CLI does have a [dry-run mode](https://huggingface.co/docs/huggingface_hub/en/guides/cli#dry-run-mode) for _downloading_ datasets. Additionally, if working with Git LFS, there is a [preupload LFS](https://huggingface.co/docs/huggingface_hub/en/guides/upload#preupload-lfs-files-before-commit) option to ensure ...before committing.
+[^2]: Note that Hugging Face does impose [tiered rate limits](https://huggingface.co/docs/hub/rate-limits#rate-limit-tiers) (as of September 2025).
 
 ```python
 import pandas as pd
