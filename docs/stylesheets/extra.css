@@ -29,15 +29,15 @@ Define colors for theme
 Defaults with Imageomics & ABC colors
 */
 body {
-  --color-lm-primary: #125f5f; /* light mode primary color (Imageomics blue) */
-  --color-lm-url: #1b9090; /* light mode URL + note color (dark teal) */
-  --color-lm-url-10: #1b90901a; /* 10% alpha */
-  --color-lm-accent: #8e4799; /* light mode accent color (light green) */
-  --color-lm-accent-10: #8e47991a; /* 10% alpha */
-  --color-dm-primary: #0b4141; /* dark mode primary color (dark grey blue) */
-  --color-dm-url: #35a5a5; /* custom similar grey-blue for dark mode contrast */
-  --color-dm-accent: #925a9b; /* dark mode accent color (turquoise) */
-  --color-dm-accent-10: #925a9b1a; /* 10% alpha */
+  --color-lm-primary: #245963; /* light mode primary color (teal-9) */
+  --color-lm-url: #3c707a; /* light mode URL + note color (teal-11) */
+  --color-lm-url-10: #3c707a1a; /* 10% alpha */
+  --color-lm-accent: #7eac55; /* light mode accent color (lime-9) */
+  --color-lm-accent-10: #7eac551a; /* 10% alpha */
+  --color-dm-primary: #174952; /* dark mode primary color (teal-10) */
+  --color-dm-url: #7dc7d6; /* dark mode contrast url (teal-11) */
+  --color-dm-accent: #73a049; /* dark mode accent color (lime-10) */
+  --color-dm-accent-10: #73a0491a; /* 10% alpha */
 }
 
 /* Light mode colors */
