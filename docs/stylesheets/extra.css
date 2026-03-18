@@ -25,8 +25,8 @@ based on this suggestion: https://github.com/squidfunk/mkdocs-material/discussio
 }
 
 /* 
-Define colors for theme 
-Defaults with Imageomics & ABC colors
+Define colors for theme
+Color palette as defined here: https://github.com/Imageomics/Collaborative-distributed-science-guide/issues/59
 */
 body {
   --color-lm-primary: #245963; /* light mode primary color (teal-9) */
