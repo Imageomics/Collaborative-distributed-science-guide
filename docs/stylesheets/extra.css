@@ -76,24 +76,27 @@ Define through LM/DM scheme color variables to change with mode
 }
 
 /* 
-Set admonition (question and tip) colors 
+Set admonition (question, tip and info) colors 
 Change with LM/DM (set through scheme color variables)
 */
 .md-typeset .admonition.question, .md-typeset details.question,
-.md-typeset .admonition.tip, .md-typeset details.tip {
+.md-typeset .admonition.tip, .md-typeset details.tip,
+.md-typeset .admonition.info, .md-typeset details.info {
     border-color: var(--md-accent-fg-color);
     box-shadow: var(--md-accent-fg-color-10);
 }
 
 /* icon color */
 .md-typeset .admonition.question > .admonition-title::before,
-.md-typeset .admonition.tip > .admonition-title::before {
+.md-typeset .admonition.tip > .admonition-title::before,
+.md-typeset .admonition.info > .admonition-title::before {
     background-color: var(--md-accent-fg-color);
 }
 
 /* shaded part (title/heading) */
 .md-typeset .question>.admonition-title, .md-typeset .question>summary,
-.md-typeset .tip>.admonition-title, .md-typeset .tip>summary {
+.md-typeset .tip>.admonition-title, .md-typeset .tip>summary,
+.md-typeset .info>.admonition-title, .md-typeset .info>summary {
     background-color: var(--md-accent-fg-color-10);
 }
 
