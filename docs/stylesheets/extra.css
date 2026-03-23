@@ -144,6 +144,11 @@ Change with LM/DM (set through scheme color variables)
 
 /* Small screen adjustments */
 @media screen and (max-width: 76.2344em) {
+  .md-nav--primary .md-nav__title {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+  }
+
   /* Dark mode custom active parent color (side panel) */
   [data-md-color-scheme="slate"] .md-nav .md-nav__item--active > .md-nav__link {
     color: var(--color-dm-url);
