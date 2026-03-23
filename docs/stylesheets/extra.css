@@ -101,6 +101,7 @@ Change with LM/DM (set through scheme color variables)
 /* Content URLs */
 [data-md-color-scheme="default"] .md-typeset a {
   color: var(--color-lm-url);
+  text-decoration: underline;
 }
 
 [data-md-color-scheme="default"] .md-typeset a:hover {
@@ -111,6 +112,7 @@ Change with LM/DM (set through scheme color variables)
   to better distinguish from those that are above */
 [data-md-color-scheme="default"] .md-nav .md-nav__link--active {
   color: var(--color-lm-url);
+  font-weight: bold;
 }
 
 [data-md-color-scheme="default"] .md-nav .md-nav__link--active:hover {
@@ -127,6 +129,7 @@ Change with LM/DM (set through scheme color variables)
 /* Dark mode custom link color */
 [data-md-color-scheme="slate"] .md-typeset a {
   color: var(--color-dm-url);
+   text-decoration: underline;
 }
 
 [data-md-color-scheme="slate"] .md-typeset a:hover {
@@ -136,6 +139,7 @@ Change with LM/DM (set through scheme color variables)
 /* Dark mode custom active link color (side panel) */
 [data-md-color-scheme="slate"] .md-nav .md-nav__link--active {
   color: var(--color-dm-url);
+  font-weight: bold;
 }
 
 [data-md-color-scheme="slate"] .md-nav .md-nav__link--active:hover {
