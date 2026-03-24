@@ -56,6 +56,22 @@ body {
   background-color: var(--md-primary-fg-color);
 }
 
+/* Set colors for collapsible summary component */
+.md-typeset details {
+    border-color: var(--color-lm-url);
+    box-shadow: none !important;
+}
+
+/* icon color */
+.md-typeset summary:before {
+    background-color: var(--color-lm-url);
+}
+
+/* shaded part (title/heading) */
+.md-typeset summary {
+    background-color: var(--color-lm-url-10);
+}
+
 /* 
 Set admonition (note and info) colors to stand out better 
 Define through LM/DM scheme color variables to change with mode
