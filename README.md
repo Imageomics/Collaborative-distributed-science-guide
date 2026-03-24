@@ -64,7 +64,8 @@ This guide was developed alongside the [Imageomics Guide](https://imageomics.git
 <!-- markdownlint-disable-next-line MD026 -->
 ### Special Thanks to...
 
-[@EmersonFras](https://github.com/EmersonFras) for his help in setting up automated linting for easier contributing!
+- [@EmersonFras](https://github.com/EmersonFras) for his help in setting up automated linting for easier contributing!
+- [@annavik](https://github.com/annavik) for her help designing and implementing the color scheme!
 
 ### Funding
 
