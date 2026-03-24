@@ -169,6 +169,7 @@ Change with LM/DM (set through scheme color variables)
 @media screen and (max-width: 76.2344em) {
   .md-nav--primary .md-nav__title {
     background-color: var(--md-primary-fg-color);
+    /* bg defined by main theme as #fff */
     color: var(--md-primary-bg-color);
   }
 
