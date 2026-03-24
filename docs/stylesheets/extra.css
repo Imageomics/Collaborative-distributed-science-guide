@@ -23,3 +23,164 @@ based on this suggestion: https://github.com/squidfunk/mkdocs-material/discussio
   height: 2.8rem;
   width: 2.8rem;
 }
+
+/* 
+Define colors for theme
+Color palette as defined here: https://github.com/Imageomics/Collaborative-distributed-science-guide/issues/59
+*/
+body {
+  --color-lm-primary: #245963; /* light mode primary color (teal-9) */
+  --color-lm-url: #3c707a; /* light mode URL + note color (teal-11) */
+  --color-lm-url-10: #3c707a1a; /* 10% alpha */
+  --color-lm-accent: #7eac55; /* light mode accent color (lime-9) */
+  --color-lm-accent-10: #7eac551a; /* 10% alpha */
+  --color-dm-primary: #174952; /* dark mode primary color (teal-10) */
+  --color-dm-url: #7dc7d6; /* dark mode contrast url (teal-11) */
+  --color-dm-accent: #73a049; /* dark mode accent color (lime-10) */
+  --color-dm-accent-10: #73a0491a; /* 10% alpha */
+}
+
+/* Light mode colors */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        var(--color-lm-primary);
+  --md-accent-fg-color:         var(--color-lm-accent);
+  --md-accent-fg-color-10:     var(--color-lm-accent-10);
+}
+
+/* GitHub panel color (mobile and small screen, issue 18) */
+.md-nav__source {
+  background-color: var(--md-primary-fg-color);
+}
+
+.md-source {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* Set colors for collapsible summary component */
+.md-typeset details {
+    border-color: var(--color-lm-url);
+    box-shadow: none !important;
+}
+
+/* icon color */
+.md-typeset summary:before {
+    background-color: var(--color-lm-url);
+}
+
+/* shaded part (title/heading) */
+.md-typeset summary {
+    background-color: var(--color-lm-url-10);
+}
+
+/* 
+Set admonition (note and info) colors to stand out better 
+Define through LM/DM scheme color variables to change with mode
+*/
+.md-typeset .admonition.note, .md-typeset details.note,
+.md-typeset .admonition.info, .md-typeset details.info {
+    border-color: var(--color-lm-url);
+    box-shadow: var(--color-lm-url-10);
+}
+
+/* icon color */
+.md-typeset .admonition.note > .admonition-title::before,
+.md-typeset .admonition.info > .admonition-title::before {
+    background-color: var(--color-lm-url);
+}
+
+/* shaded part (title/heading) */
+.md-typeset .note>.admonition-title,.md-typeset .note>summary,
+.md-typeset .info>.admonition-title, .md-typeset .info>summary {
+    background-color: var(--color-lm-url-10);
+}
+
+/* 
+Set admonition (question and tip) colors 
+Change with LM/DM (set through scheme color variables)
+*/
+.md-typeset .admonition.question, .md-typeset details.question,
+.md-typeset .admonition.tip, .md-typeset details.tip {
+    border-color: var(--md-accent-fg-color);
+    box-shadow: var(--md-accent-fg-color-10);
+}
+
+/* icon color */
+.md-typeset .admonition.question > .admonition-title::before,
+.md-typeset .admonition.tip > .admonition-title::before {
+    background-color: var(--md-accent-fg-color);
+}
+
+/* shaded part (title/heading) */
+.md-typeset .question>.admonition-title, .md-typeset .question>summary,
+.md-typeset .tip>.admonition-title, .md-typeset .tip>summary {
+    background-color: var(--md-accent-fg-color-10);
+}
+
+/* Set lightmode URL colors */
+/* Content URLs */
+[data-md-color-scheme="default"] .md-typeset a {
+  color: var(--color-lm-url);
+  font-weight: bold;
+}
+
+[data-md-color-scheme="default"] .md-typeset a:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Navigation URL (side panel contents)
+  to better distinguish from those that are above */
+[data-md-color-scheme="default"] .md-nav .md-nav__link--active {
+  color: var(--color-lm-url);
+  font-weight: bold;
+}
+
+[data-md-color-scheme="default"] .md-nav .md-nav__link--active:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Dark mode colors */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        var(--color-dm-primary);
+  --md-accent-fg-color:         var(--color-dm-accent);
+  --md-accent-fg-color-10:     var(--color-dm-accent-10);
+}
+
+/* Dark mode custom link color */
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: var(--color-dm-url);
+  font-weight: bold;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Dark mode custom active link color (side panel) */
+[data-md-color-scheme="slate"] .md-nav .md-nav__link--active {
+  color: var(--color-dm-url);
+  font-weight: bold;
+}
+
+[data-md-color-scheme="slate"] .md-nav .md-nav__link--active:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* Small screen adjustments */
+@media screen and (max-width: 76.2344em) {
+  .md-nav--primary .md-nav__title {
+    background-color: var(--md-primary-fg-color);
+    /* bg defined by main theme as #fff */
+    color: var(--md-primary-bg-color);
+  }
+
+  /* Dark mode custom active parent color (side panel) */
+  [data-md-color-scheme="slate"] .md-nav .md-nav__item--active > .md-nav__link {
+    color: var(--color-dm-url);
+    font-weight: bold;
+  }
+  
+  /* Dark mode custom active parent hover color (side panel) */
+  [data-md-color-scheme="slate"] .md-nav .md-nav__item--active:hover > .md-nav__link {
+    color: var(--md-accent-fg-color);
+  }
+}
