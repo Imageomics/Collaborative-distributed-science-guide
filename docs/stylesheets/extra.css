@@ -114,7 +114,7 @@ Change with LM/DM (set through scheme color variables)
 /* Navigation URL (side panel contents)
   to better distinguish from those that are above */
 [data-md-color-scheme="default"] .md-nav .md-nav__link--active {
-  color: var(--md-accent-fg-color);
+  color: var(--color-lm-url);
   font-weight: bold;
 }
 
@@ -141,7 +141,7 @@ Change with LM/DM (set through scheme color variables)
 
 /* Dark mode custom active link color (side panel) */
 [data-md-color-scheme="slate"] .md-nav .md-nav__link--active {
-  color: var(--md-accent-fg-color);
+  color: var(--color-dm-url);
   font-weight: bold;
 }
 
@@ -158,7 +158,8 @@ Change with LM/DM (set through scheme color variables)
 
   /* Dark mode custom active parent color (side panel) */
   [data-md-color-scheme="slate"] .md-nav .md-nav__item--active > .md-nav__link {
-    color: var(--md-accent-fg-color);
+    color: var(--color-dm-url);
+    font-weight: bold;
   }
   
   /* Dark mode custom active parent hover color (side panel) */
