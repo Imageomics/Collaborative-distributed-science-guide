@@ -27,7 +27,7 @@ In the Files and Versions tab of the repository, you can select "Contribute" to 
 
 ![Dataset repository Add file button](images/HF-dataset-upload/346190430-9e6cef9b-18ef-4d4a-84c5-1a3f75ac9336.png){ loading=lazy }
 
-This method is fine for smaller files (<100MB), or dataset repositories that are distributed, not well organized, have less files. If you are uploading existing files, navigate to the target folder first.
+This method is fine for smaller files (<100MB), or data uploads from distributed sources, that have a relatively flat structure with few directories, and/or have few files. If you are uploading existing files, navigate to the target folder first.
 
 ## Upload a Dataset with the Hugging Face CLI
 
