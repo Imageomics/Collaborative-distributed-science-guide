@@ -111,13 +111,12 @@ You can check your `CITATION.cff` file prior to upload using this [validator too
 
 !!! note "Note"
     - When adding a DOI to your citation (`doi`), be sure to use the version-agnostic DOI from Zenodo. Since the DOI is not generated until _after_ the release, this ensures there will never be an "incorrect" DOI associated to the release&mdash;correct version reference is ensured through the `version` key, which should always be updated _**before**_ generating a new release.
-    - Subcategories of `preferred-citation` do not get bullet points, but the first subcategory of `references` must be bulleted (as below).
-    - This is generally intended as a reference for your code. Preferred citation can be used for the paper, though it is better to ask in the `README` that someone cites _both_ and provide the paper reference there (only the `preferred-citation` will show up to be copied from the citation box if it is included).
+    - A `CITATION.cff` is intended as a reference for your code; ask in the `README` that someone cites _both_ the repo and your paper, then provide the paper BibTeX there.
 
-=== "Standard Citation File"
+=== "Standard Citation File (Recommended)"
 
     !!! tip
-        Pair this citation file with a [`.zenodo.json`](#zenodo-metadata) for easier DOI metadata tracking.
+        Pair this citation file with a [`.zenodo.json`](#zenodo-metadata) for easier DOI metadata tracking (grants, references, associated papers).
 
     ```yaml { py linenums="1" }
     abstract: "<describe your code/package>"
@@ -147,8 +146,15 @@ You can check your `CITATION.cff` file prior to upload using this [validator too
 
 === "Extended `CFF` (References and Citation redirect)"
 
-    !!! tip
-        If including `references` or setting a `preferred-citation`, see this [bibtex to cff crosswalk](https://docs.ropensci.org/cffr/articles/bibtex-cff.html#fieldskey-crosswalk) for help in translating a BibTeX citation to the proper `CFF` format.
+    !!! warning
+        This is generally intended as a **reference for your code**. Preferred citation can be used for the paper, though it is better to ask in the `README` that someone cites _both_ and provide the paper reference there (only the `preferred-citation` will show up to be copied from the citation box if it is included).
+        
+        !!! success "Simplify version tracking for you code"
+            Pair the [standard citation file](#__tabbed_1_1) with a [.zenodo.json file](#zenodo-metadata), which can track references, associated papers, and grant information.
+
+    !!! info
+        - Subcategories of `preferred-citation` do not get bullet points, but the first subcategory of `references` must be bulleted (as below).
+        - If including `references` or setting a `preferred-citation`, see this [bibtex to cff crosswalk](https://docs.ropensci.org/cffr/articles/bibtex-cff.html#fieldskey-crosswalk) for help in translating a BibTeX citation to the proper `CFF` format.
 
     ```yaml { py linenums="1" }
     abstract: "<describe your code/package>"
@@ -195,6 +201,7 @@ You can check your `CITATION.cff` file prior to upload using this [validator too
       doi:
       # url: use only if DOI not available
     # References can be added here, but will only be read from the .zenodo.json file
+    # Below example set to reference code repo, `preferred-citation` types apply
     references:
       - authors:
           - family-names:
