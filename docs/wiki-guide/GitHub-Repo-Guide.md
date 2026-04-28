@@ -177,16 +177,23 @@ You can check your `CITATION.cff` file prior to upload using this [validator too
     # Only include the following if you want to present the paper citation instead of code on sidebar,
     # Better to include paper citation in README
     preferred-citation:
-    type: article
+    type: conference-paper
     authors:
         - family-names:
         given-names:
         - family-names:
         given-names:
-    title: 
+    collection-title: # "Proceedings of the ..."
+    collection-type: proceedings
+    conference:
+        name: # Name of conference, e.g., "ICLR 2025"
+    pages: #"<start>-<end>"
+    start: # First page, int
+    end: # Last page, int
+    title: # Paper title
     year:
-    journal:
     doi:
+    # url: use only if DOI not available
     # References can be added here, but will only be read from the .zenodo.json file
     references:
     - authors:
