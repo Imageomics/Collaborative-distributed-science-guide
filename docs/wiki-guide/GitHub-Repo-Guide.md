@@ -123,19 +123,19 @@ You can check your `CITATION.cff` file prior to upload using this [validator too
     abstract: "<describe your code/package>"
     authors:
     - family-names:
-    given-names: "<First M.I.>"
+      given-names: "<First M.I.>"
     orcid: "https://orcid.org/<ORCID #>"
     cff-version: 1.2.0
     date-released: "YYYY-MM-DD"
     identifiers:
-    - description: "The GitHub release URL of tag <version>."
+      - description: "The GitHub release URL of tag <version>."
         type: url
         value: "https://github.com/Imageomics/<repo>/releases/tag/<tag-name>"
-    - description: "The GitHub URL of the commit tagged with <tag-name>."
+      - description: "The GitHub URL of the commit tagged with <tag-name>."
         type: url
         value: "https://github.com/Imageomics/<repo>/tree/<commit-hash>"
     keywords:
-    - imageomics
+      - imageomics
     license:
     message: "If you find this software helpful in your research, please cite both the software and our paper."
     repository-code: "https://github.com/Imageomics/<repo>"
@@ -154,19 +154,19 @@ You can check your `CITATION.cff` file prior to upload using this [validator too
     abstract: "<describe your code/package>"
     authors:
     - family-names:
-    given-names: "<First M.I.>"
+      given-names: "<First M.I.>"
     orcid: "https://orcid.org/<ORCID #>"
     cff-version: 1.2.0
     date-released: "YYYY-MM-DD"
     identifiers:
-    - description: "The GitHub release URL of tag <version>."
+      - description: "The GitHub release URL of tag <version>."
         type: url
         value: "https://github.com/Imageomics/<repo>/releases/tag/<tag-name>"
-    - description: "The GitHub URL of the commit tagged with <tag-name>."
+      - description: "The GitHub URL of the commit tagged with <tag-name>."
         type: url
         value: "https://github.com/Imageomics/<repo>/tree/<commit-hash>"
     keywords:
-    - imageomics
+      - imageomics
     license:
     message: "If you find this software helpful in your research, please cite both the software and our paper."
     repository-code: "https://github.com/Imageomics/<repo>"
@@ -177,29 +177,29 @@ You can check your `CITATION.cff` file prior to upload using this [validator too
     # Only include the following if you want to present the paper citation instead of code on sidebar,
     # Better to include paper citation in README
     preferred-citation:
-    type: conference-paper
-    authors:
+      type: conference-paper
+      authors:
         - family-names:
-        given-names:
+          given-names:
         - family-names:
-        given-names:
-    collection-title: # "Proceedings of the ..."
-    collection-type: proceedings
-    conference:
+          given-names:
+      collection-title: # "Proceedings of the ..."
+      collection-type: proceedings
+      conference:
         name: # Name of conference, e.g., "ICLR 2025"
-    pages: #"<start>-<end>"
-    start: # First page, int
-    end: # Last page, int
-    title: # Paper title
-    year:
-    doi:
-    # url: use only if DOI not available
+      pages: #"<start>-<end>"
+      start: # First page, int
+      end: # Last page, int
+      title: # Paper title
+      year:
+      doi:
+      # url: use only if DOI not available
     # References can be added here, but will only be read from the .zenodo.json file
     references:
-    - authors:
-        - family-names:
+      - authors:
+          - family-names:
             given-names:
-        - family-names:
+          - family-names:
             given-names:
         title: 
         version:
