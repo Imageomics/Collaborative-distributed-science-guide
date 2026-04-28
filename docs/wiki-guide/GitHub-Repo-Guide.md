@@ -123,7 +123,7 @@ Providing this file is as simple as copying the below example and filling in you
     authors:
     - family-names:
       given-names: "<First M.I.>"
-    orcid: "https://orcid.org/<ORCID #>"
+      orcid: "https://orcid.org/<ORCID #>"
     cff-version: 1.2.0
     date-released: "YYYY-MM-DD"
     identifiers:
@@ -161,7 +161,7 @@ Providing this file is as simple as copying the below example and filling in you
     authors:
     - family-names:
       given-names: "<First M.I.>"
-    orcid: "https://orcid.org/<ORCID #>"
+      orcid: "https://orcid.org/<ORCID #>"
     cff-version: 1.2.0
     date-released: "YYYY-MM-DD"
     identifiers:
