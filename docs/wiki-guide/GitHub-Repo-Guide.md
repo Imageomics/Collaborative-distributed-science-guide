@@ -107,11 +107,10 @@ As with journal publications, we expect to be cited when someone uses our code. 
 
 Providing this file is as simple as copying the below example and filling in your information before uploading it to your repo. More examples and information about the Citation File Format can be found on the [citation-file-format repo](https://github.com/citation-file-format/citation-file-format), including helpful [related tools](https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench).
 
-You can check your `CITATION.cff` file prior to upload using this [validator tool](https://www.yamllint.com/).
-
 !!! note "Note"
     - When adding a DOI to your citation (`doi`), be sure to use the version-agnostic DOI from Zenodo. Since the DOI is not generated until _after_ the release, this ensures there will never be an "incorrect" DOI associated to the release&mdash;correct version reference is ensured through the `version` key, which should always be updated _**before**_ generating a new release.
     - A `CITATION.cff` is intended as a reference for your code; ask in the `README` that someone cites _both_ the repo and your paper, then provide the paper BibTeX there.
+    - Formatted display can be checked on a branch before merging to `main`.
 
 === "Standard Citation File (Recommended)"
 
