@@ -239,7 +239,7 @@ A `.zenodo.json` can be created by applying [cffconvert](https://github.com/cita
     "creators": [
       {
           "name": "family-names, given-names",
-          "orcid": "",
+          "orcid": "", // Just the ORCID number, not the URL
           "affiliation": ""
       },
       {
