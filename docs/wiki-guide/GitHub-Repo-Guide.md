@@ -132,7 +132,7 @@ Providing this file is as simple as copying the below example and filling in you
         value: "https://github.com/Imageomics/<repo>/releases/tag/<tag-name>"
       - description: "The GitHub URL of the commit tagged with <tag-name>."
         type: url
-        value: "https://github.com/Imageomics/<repo>/tree/<commit-hash>"
+        value: "https://github.com/Imageomics/<repo>/tree/<commit-hash>" # Update on release
     keywords:
       - imageomics
     license:
@@ -170,7 +170,7 @@ Providing this file is as simple as copying the below example and filling in you
         value: "https://github.com/Imageomics/<repo>/releases/tag/<tag-name>"
       - description: "The GitHub URL of the commit tagged with <tag-name>."
         type: url
-        value: "https://github.com/Imageomics/<repo>/tree/<commit-hash>"
+        value: "https://github.com/Imageomics/<repo>/tree/<commit-hash>" # Update on release
     keywords:
       - imageomics
     license:
