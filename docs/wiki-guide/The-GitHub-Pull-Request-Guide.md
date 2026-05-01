@@ -151,7 +151,7 @@ After receiving feedback on your pull request, you can apply the changes in one 
 
 #### 3.2.1 Apply a change in its own commit
 
-If you agree with at suggested change, qpply it by creating a separate commit for it. This approach helps keep your commit history clear and each change traceable.
+If you agree with a suggested change, apply it in the "Conversation" tab by creating a separate commit for it. This approach helps keep your commit history clear and each change traceable.
 
 ![Commit suggestions button](images/GH-PR-guide/369920474-be5503d3-6cc2-4313-b49d-069a5a806ac4.png){ loading=lazy, width="600" }
 /// caption
@@ -159,11 +159,21 @@ If you agree with at suggested change, qpply it by creating a separate commit fo
 
 #### 3.2.2 Add multiple suggestions to a batch of changes
 
-If you plan to include multiple changes in one commit, you can add suggestions to a batch. Once you've collected all the desired suggestions, click "Commit suggestions" to apply them in one go.
+If you plan to include multiple changes in one commit, you can add suggestions to a batch. This is the preferred method when multiple suggestions are needed to implement the full change. First, navigate to the "Files changed" tab.
 
-![Add suggested change to batch button](images/GH-PR-guide/369920952-1b4e0db0-3451-448b-822f-dd1b14679ec6.png){ loading=lazy, width="600" }
+![Pull request header section with different view tabs, the 'Files changed' tab is selected with a box around it to highlight where it is](images/GH-PR-guide/Files-changed-tab.png){ loading=lazy, style="width:100%" }
 /// caption
 ///
+
+As you scroll through the updated files, comments and suggestions will be displayed at the line(s) to which they refer. Select the option to "Add suggestion to batch" for all suggestions you wish to include; use the "Remove from batch" option to remove those you do not want to include.
+
+![Add suggested change to batch button](images/GH-PR-guide/Add-to-batch.png){ loading=lazy, style="width:45.5%" }
+![remove suggested change from batch button](images/GH-PR-guide/Remove-from-batch.png){ loading=lazy, style="width:45%" }
+
+Once you've collected all the desired suggestions, click "Commit suggestions" at the top of the tab, then select "Apply suggestions", to commit them all in one go. Observe that the number of selected suggestions appears in both these buttons (5 in this example). All the suggestions to commit can be scrolled through in this pop-up.
+
+![Commit suggestions button is green on the right, with the words 'Commit suggestions 5' on it, a 'Discard batch' option is to its left, the comments button with the number 5 is all the way to the right inline with them](images/GH-PR-guide/Commit-suggestions.png){ loading=lazy, style="float:right;width:75%" }
+![Apply suggestions pop-up window, the button is green and in the bottom right, with the words 'Apply suggestions 5' on it, suggestions are available to scroll through, and 'Discard batch' is bottom left button, there's also a 'Cancel' button to the left of the 'Apply suggestions' button](images/GH-PR-guide/Apply-suggestions.png){ loading=lazy, style="width:75%" }
 
 ### 3.3 Add Commit Message
 
