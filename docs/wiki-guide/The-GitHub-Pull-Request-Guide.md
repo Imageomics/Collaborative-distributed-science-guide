@@ -177,7 +177,10 @@ Once you've collected all the desired suggestions, click "Commit suggestions" at
 
 ### 3.3 Add Commit Message
 
-In the commit message field, enter a brief, descriptive message that clearly explains the changes made to the file(s).
+In the commit message field, enter a brief, descriptive message that clearly explains *the reasoning for the changes* made to the file(s). For instance, the above changes might best be served by the following commit message, since a function's behavior has been changed.
+> Change expected output to match new function return
+
+Please see the [GitHub Repo Guide section on commits](GitHub-Repo-Guide.md#commits) for more guidance on how to write a good commit message.
 
 ### 3.4 Click Commit changes
 
