@@ -147,15 +147,14 @@ Navigate to your repository name, click **Pull requests**
 
 ### 3.2 Incorporate Feedback Changes
 
-After receiving feedback on your pull request, you can apply the changes in one of two ways: either by committing each change individually or by grouping several changes into a single commit. The method you choose depends on whether you prefer fine-grained control over the commit history or a more streamlined approach.
+After receiving feedback on your pull request, you can apply the changes in one of two ways: either by [committing each change individually](#321-apply-a-change-in-its-own-commit) or by [grouping several changes into a single commit](#322-add-multiple-suggestions-to-a-batch-of-changes). The method you choose depends on whether you prefer fine-grained control over the commit history or a more streamlined approach, which also allows for grouping related changes for easier review.
 
 #### 3.2.1 Apply a change in its own commit
 
-If you agree with a suggested change, apply it in the "Conversation" tab by creating a separate commit for it. This approach helps keep your commit history clear and each change traceable.
+If you agree with a suggested change, apply it in the "Conversation" tab by selecting "Commit suggestion" to create a separate commit for it. This approach helps keep your commit history clear and each change traceable.
 
-![Commit suggestions button](images/GH-PR-guide/369920474-be5503d3-6cc2-4313-b49d-069a5a806ac4.png){ loading=lazy, width="600" }
-/// caption
-///
+![Commit suggestions button highlighted with dropdown/pop-up box with the text prompt to add a commit message and the 'Commit suggestions' button at the bottom right](images/GH-PR-guide/369920474-be5503d3-6cc2-4313-b49d-069a5a806ac4.png){ loading=lazy, style="width:100%" }
+<small>This button will bring up a "Commit suggestions" box in which you can update the commit message with something informative about *why* this change is being made. Please see the [GitHub Repo Guide section on commits](GitHub-Repo-Guide.md#commits) for more guidance on how to write a good commit message.</small>
 
 #### 3.2.2 Add multiple suggestions to a batch of changes
 
@@ -175,21 +174,23 @@ Once you've collected all the desired suggestions, click "Commit suggestions" at
 ![Commit suggestions button is green on the right, with the words 'Commit suggestions 5' on it, a 'Discard batch' option is to its left, the comments button with the number 5 is all the way to the right inline with them](images/GH-PR-guide/Commit-suggestions.png){ loading=lazy, style="float:right;width:75%" }
 ![Apply suggestions pop-up window, the button is green and in the bottom right, with the words 'Apply suggestions 5' on it, suggestions are available to scroll through, and 'Discard batch' is bottom left button, there's also a 'Cancel' button to the left of the 'Apply suggestions' button](images/GH-PR-guide/Apply-suggestions.png){ loading=lazy, style="width:75%" }
 
-### 3.3 Add Commit Message
+#### 3.2.3 Add Commit Message
 
 In the commit message field, enter a brief, descriptive message that clearly explains *the reasoning for the changes* made to the file(s). For instance, the above changes might best be served by the following commit message, since a function's behavior has been changed.
 > Change expected output to match new function return
 
 Please see the [GitHub Repo Guide section on commits](GitHub-Repo-Guide.md#commits) for more guidance on how to write a good commit message.
 
-### 3.4 Click Commit changes
+#### 3.2.4 Commit changes
 
-After entering your commit message, click the "Commit changes" button to finalize and save your modifications to the repository. This step ensures that your changes are recorded and can be reviewed or merged into the main codebase.
+After entering your commit message, click the "Apply Suggestions" button to finalize the commit and thus save your modifications to the repository. This step ensures that your changes are recorded and can be reviewed or merged into the main codebase.
 
-### 3.5 Re-requesting a Review
+### 3.4 Re-requesting a Review
 
-If you’ve addressed all the requested changes and your pull request requires further review, re-request a review by notifying the reviewers. This action prompts them to evaluate your updated code and provide feedback or approval.
+If you have addressed all the requested changes and your pull request requires further review, re-request a review by notifying the reviewers. Clicking the "re-request review" button  This action prompts them to evaluate your updated code and provide feedback or approval.
 
-### 3.6 Out-of-scope Suggestion
+![Re-request review is the hover text for the blue arrows forming a circle pointing at each other in the 'Reviewers' section of the sidepanel](images/GH-PR-guide/re-request-review.png){ loading=lazy, style="width:60%" }
 
-If the suggested change falls outside the scope of your pull request, create a new issue to address the feedback separately. Issues can be created directly from a PR comment.
+### 3.5 Out-of-scope Suggestion
+
+If the suggested change falls outside the scope of your pull request, create a new issue to address the feedback separately. Issues can be created directly from a PR comment by clicking on the three dots in the top right corner of the comment and selecting "Reference in new issue".
