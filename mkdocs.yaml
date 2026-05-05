@@ -133,7 +133,7 @@ nav:
       - "Model Card Template": wiki-guide/HF_ModelCard_Template_mkdocs.md
   - Quick References:
       - "Command Line Cheat Sheet": wiki-guide/Command-Line-Cheat-Sheet.md
-      - "GitHub-PyPI-Zenodo Versioning": wiki-guide/GitHub-PyPI-Zenodo-Integration.md
+      - "PyPI & Zenodo Release Automation": wiki-guide/GitHub-PyPI-Zenodo-Integration.md
   - Code of Conduct: CODE_OF_CONDUCT.md
   - Digital Product Policy: 
       - "About Digital Product Policies": wiki-guide/About-Digital-Product-Policies.md

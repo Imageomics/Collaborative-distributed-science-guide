@@ -22,7 +22,7 @@ This page is a quick reference for setting up a repository to automatically rele
 Review or create both a [`CITATION.cff`](GitHub-Repo-Guide.md#citation) and [`.zenodo.json`](GitHub-Repo-Guide.md#zenodo-metadata) file following guide instructions. Be sure to include 
 
 !!! tip "Pro tip"
-    Add this [test to validate the Zenodo metatdata file](https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/.github/workflows/validate-zenodo.yaml).* It will run whenever the `.zenodo.json` or workflow file are edited, ensuring that your Zenodo integration will run smoothly.
+    Add this [test to validate the Zenodo metatdata file](https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/.github/workflows/validate-zenodo.yaml). It will run whenever the `.zenodo.json` or workflow file are edited, ensuring that your Zenodo integration will run smoothly.
 
 Before release, ensure that...
 
@@ -32,7 +32,7 @@ Before release, ensure that...
 - The release date in both files is correct.
 
     !!! info
-        This should be added in a PR as the last commit before a release, but check that the date matches, since these PRs sometimes are not merged on the day they are created.
+        This should be added in a PR as the last commit before a release, but check that the date matches, since these PRs may not necessarily be merged on the same day they are created.
 
 - Set [citation file identifiers](GitHub-Repo-Guide.md#__codelineno-1-8):
     - Version tag link should match the updated version. The commit hash of the version will be filled in *after* release.
@@ -92,7 +92,7 @@ There are a few updates required after generating a release, though the last lis
         - [ ] The release date in both files is correct.
 
             !!! info
-                This should be added in a PR as the last commit before a release, but check that the date matches, since these PRs sometimes are not merged on the day they are created.
+                This should be added in a PR as the last commit before a release, but check that the date matches, since these PRs may not necessarily be merged on the same day they are created.
 
         - Set [citation file identifiers](GitHub-Repo-Guide.md#__codelineno-1-8):
             - [ ] Version tag link should match the updated version. The commit hash of the version will be filled in *after* release.
