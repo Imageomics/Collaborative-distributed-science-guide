@@ -187,7 +187,7 @@ After entering your commit message, click the "Apply Suggestions" button to fina
 
 ### 3.4 Re-requesting a Review
 
-If you have addressed all the requested changes and your pull request requires further review, re-request a review by notifying the reviewers. Clicking the "re-request review" button  This action prompts them to evaluate your updated code and provide feedback or approval.
+Once you have addressed all the requested changes, click the "re-request review" button to notify the PR reviewer(s). This action prompts them to evaluate your updated code and provide feedback or approval.
 
 ![Re-request review is the hover text for the blue arrows forming a circle pointing at each other in the 'Reviewers' section of the sidepanel](images/GH-PR-guide/re-request-review.png){ loading=lazy, style="width:60%" }
 
