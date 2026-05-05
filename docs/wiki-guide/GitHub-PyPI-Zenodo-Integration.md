@@ -10,16 +10,16 @@ This page is a quick reference for setting up a repository to automatically rele
 
 ## Before Generating a Release
 
-### Set version in...
+### Set version in... <!-- markdownlint-disable-line MD026 -->
 
 - `__about__.py` file
     - Version should be set *dynamically* in the `pyproject.toml` from this file.*
 - [`CITATION.cff`](GitHub-Repo-Guide.md#citation-templates)
 - [`.zenodo.json`](GitHub-Repo-Guide.md#zenodo-metadata)
 
-### Add/Update Citation and Zenodo Metadata Files 
+### Add/Update Citation and Zenodo Metadata Files
 
-Review or create both a [`CITATION.cff`](GitHub-Repo-Guide.md#citation) and [`.zenodo.json`](GitHub-Repo-Guide.md#zenodo-metadata) file following guide instructions. Be sure to include 
+Review or create both a [`CITATION.cff`](GitHub-Repo-Guide.md#citation) and [`.zenodo.json`](GitHub-Repo-Guide.md#zenodo-metadata) file following guide instructions. Be sure to include
 
 !!! tip "Pro tip"
     Add this [test to validate the Zenodo metatdata file](https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/.github/workflows/validate-zenodo.yaml). It will run whenever the `.zenodo.json` or workflow file are edited, ensuring that your Zenodo integration will run smoothly.
