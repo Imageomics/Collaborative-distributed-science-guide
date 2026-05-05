@@ -153,8 +153,11 @@ After receiving feedback on your pull request, you can apply the changes in one 
 
 If you agree with a suggested change, apply it in the "Conversation" tab by selecting "Commit suggestion" to create a separate commit for it. This approach helps keep your commit history clear and each change traceable.
 
+<!-- Caption doesn't seem to have the fine-grained controls for smaller text spanning the width of the image, so bypassing HTML rule to allow for desired formatting. -->
+<!-- markdownlint-disable MD033 -->
 ![Commit suggestions button highlighted with dropdown/pop-up box with the text prompt to add a commit message and the 'Commit suggestions' button at the bottom right](images/GH-PR-guide/369920474-be5503d3-6cc2-4313-b49d-069a5a806ac4.png){ loading=lazy, style="width:100%" }
 <small>This button will bring up a "Commit suggestions" box in which you can update the commit message with something informative about *why* this change is being made. Please see the [GitHub Repo Guide section on commits](GitHub-Repo-Guide.md#commits) for more guidance on how to write a good commit message.</small>
+<!-- markdownlint-enable MD033 -->
 
 #### 3.2.2 Add multiple suggestions to a batch of changes
 
