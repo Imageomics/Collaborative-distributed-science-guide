@@ -133,16 +133,19 @@ There are a few updates required after generating a release, though the last lis
         - [ ] Set version tag in [citation file identifiers](GitHub-Repo-Guide.md#__codelineno-1-8) to match the updated version. The commit hash of the version will be filled in *after* release.
     ```
 
-=== "After Release"
-
-    Only one step here is required for ***every release***: Add release commit hash to `CITATION.cff` [identifiers](GitHub-Repo-Guide.md#__codelineno-1-8).
-
+=== "After First Release"
     ```Markdown
     - [ ] Add *version-agnostic* DOI badge to `README`*.
         - See [Add a Zenodo DOI Badge](DOI-Generation.md#add-a-zenodo-doi-badge) for instructions.
     - [ ] Add PyPI badges to `README`*.
     - [ ] Add *version-agnostic* DOI to `CITATION.cff`*.
-    - [ ] ***Every release***: Add release commit hash to `CITATION.cff` [identifiers](GitHub-Repo-Guide.md#__codelineno-1-8).
+    - [ ] Add release commit hash to `CITATION.cff` [identifiers](GitHub-Repo-Guide.md#__codelineno-1-8).
+    ```
+
+=== "After Release"
+
+    ```Markdown
+    - [ ] Add release commit hash to `CITATION.cff` [identifiers](GitHub-Repo-Guide.md#__codelineno-1-8).
     ```
 
 [^1]: Note that this follows the [PyPI Trusted Publishers docs](https://docs.pypi.org/trusted-publishers/using-a-publisher/) to remove the need for a token, though you must first configure GitHub as a ["pending" Trusted Publisher](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/) for the project on PyPI.
