@@ -1,4 +1,4 @@
-# GitHub-PyPI-Zenodo Versioning and Release Version Guide
+# PyPI & Zenodo Release Automation
 
 This page is a quick reference for setting up a repository to automatically release to the [Python Package Index (PyPI)](https://pypi.org/) and [Zenodo](https://zenodo.org/) on a GitHub release. At the bottom of the page are [checklists](#release-checklist) for first-time releases, new releases, and post-release steps. These are set up to be copied into a relevant issue on your GitHub repository for easier tracking.
 
