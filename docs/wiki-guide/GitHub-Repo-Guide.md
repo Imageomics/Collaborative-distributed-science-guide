@@ -216,7 +216,7 @@ Providing this file is as simple as copying the below example and filling in you
     ```
 
 !!! tip "Pro tip"
-    Check your citation renders correctly on a branch. When you push the `CITATION.cff` to a branch, you can select "Cite this repository" to see if it is rendering as expected:
+    Check whether your citation renders correctly on a branch. When you push the `CITATION.cff` to a branch and browse the repository at that branch, you can select "Cite this repository" in the righthand sidebar to see if it is rendering as expected:
     ![Screenshot of "Cite this repository" pop-up on the Collaborative Distributed Science Guide repository. It shows APA and BibTeX 'content tabs' with the beginnings of a scrollable and copiable citation](images/GH-repo-guide/citation-cff-check.png)
 
 ## Recommended Files
