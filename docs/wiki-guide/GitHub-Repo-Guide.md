@@ -105,6 +105,10 @@ Make it easier for people to cite your project by including a [CITATION.cff file
 
 As with journal publications, we expect to be cited when someone uses our code. To facilitate proper attribution, GitHub will automatically read a [CITATION.cff file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) and display a link to "cite this repository". This file is also used to populate metadata fields in a [Zenodo](https://zenodo.org/) record when [auto-generating a DOI](DOI-Generation.md#2-generate-a-doi-with-zenodo). As with any other component of your project, this file may change over the project's lifespan (see [Digital Product Life Cycle](Digital-Product-Lifecycle.md) for details), but it should be present and updated before any release.
 
+[OpenCite](https://imageomics.github.io/OpenCite/) is a tool researchers can use to create standardized citation metadata for research software. It guides you through entering project details, authors and ORCID iDs, version and release information, identifiers, references, and funding. It then validates the information and exports both `CITATION.cff` and `.zenodo.json` files, helping you avoid missing or inconsistent metadata when preparing a repository or release for GitHub and Zenodo. Always review the generated or imported information before using it, especially the names, ORCID iDs, repository URL, version, release date, DOI, license, references, and funding details.
+
+[Open OpenCite](https://imageomics.github.io/OpenCite/){ .md-button }
+
 Providing this file is as simple as copying the below example and filling in your information before uploading it to your repo. More examples and information about the Citation File Format can be found on the [citation-file-format repo](https://github.com/citation-file-format/citation-file-format), including helpful [related tools](https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench).
 
 #### Citation Templates
@@ -232,6 +236,10 @@ Contributing guidelines are important to maintain consistency across the way peo
 ### Zenodo Metadata
 
 When using the Zenodo-GitHub integration for [automatic DOI generation](DOI-Generation.md#automatic-generation), tracking metadata beyond the basics (authors, keywords, title, etc.) requires manual updates to the Zenodo record. The solution for this is to include a `.zenodo.json` file to keep track of this information (e.g., grant funding and references).
+
+Use [OpenCite](https://imageomics.github.io/OpenCite/) when preparing a release: enter your metadata once, check it for common problems, and download a `CITATION.cff` and `.zenodo.json` that can be added to your repository. This makes it easier for GitHub to display citation information and for Zenodo to create a complete DOI record without re-entering the same information in multiple places. Before adding the files or publishing a DOI, review every field and correct anything OpenCite imported or generated incorrectly.
+
+[Create GitHub and Zenodo Metadata with OpenCite](https://imageomics.github.io/OpenCite/){ .md-button }
 
 A `.zenodo.json` can be created by applying [cffconvert](https://github.com/citation-file-format/cffconvert) to your `CITATION.cff` (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the [Zenodo dev guide](https://developers.zenodo.org/#representation)). Alternatively, The example below can simply be copied into a new file and updated with the appropriate information (comments should be removed prior to upload).
 
