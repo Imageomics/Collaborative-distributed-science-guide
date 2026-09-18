@@ -107,7 +107,7 @@ As with journal publications, we expect to be cited when someone uses our code. 
 
 [OpenCite](https://imageomics.github.io/OpenCite/) is a tool researchers can use to create standardized citation metadata for research software. It guides you through entering project details, authors and ORCID iDs, version and release information, identifiers, references, and funding. It then validates the information and exports both `CITATION.cff` and `.zenodo.json` files, helping you avoid missing or inconsistent metadata when preparing a repository or release for GitHub and Zenodo. Always review the generated or imported information before using it, especially the names, ORCID iDs, repository URL, version, release date, DOI, license, references, and funding details.
 
-[Open OpenCite](https://imageomics.github.io/OpenCite/){ .md-button }
+[OpenCite](https://imageomics.github.io/OpenCite/){ .md-button }
 
 Providing this file is as simple as copying the below example and filling in your information before uploading it to your repo. More examples and information about the Citation File Format can be found on the [citation-file-format repo](https://github.com/citation-file-format/citation-file-format), including helpful [related tools](https://github.com/citation-file-format/citation-file-format#tools-to-work-with-citationcff-files-wrench).
 
