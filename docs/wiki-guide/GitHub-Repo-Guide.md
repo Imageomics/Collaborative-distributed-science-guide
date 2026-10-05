@@ -247,7 +247,7 @@ A `.zenodo.json` can be created by applying [cffconvert](https://github.com/cita
 
 !!! tip "Pro tip"
     To create both metadata files from one form, use
-    [OpenCite](https://imageomics.github.io/OpenCite/)[^2].
+    [OpenCite](https://imageomics.github.io/OpenCite/).
 
 !!! note
     The `publication_date` and `version` will need to be updated along with the `CITATION.cff` for each release.
