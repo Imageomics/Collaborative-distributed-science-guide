@@ -152,7 +152,7 @@ Providing this file is as simple as copying the below example and filling in you
         This is generally intended as a **reference for your code**. Preferred citation can be used for the paper, though it is better to ask in the `README` that someone cites _both_ and provide the paper reference there (only the `preferred-citation` will show up to be copied from the citation box if it is included).
         
         !!! success "Simplify version tracking for you code"
-            Pair the [standard citation file](#__tabbed_1_1) with a [.zenodo.json file](#zenodo-metadata), which can track references, associated papers, and grant information.
+            Pair the [standard citation file](#__tabbed_1_1) with a [.zenodo.json file](#zenodo-metadata), which can track references, associated papers, and grant information. [OpenCite](https://imageomics.github.io/OpenCite/) can generate both files from one form with helpful previews to review the files before downloading them.
 
     !!! info
         - Subcategories of `preferred-citation` do not get bullet points, but the first subcategory of `references` must be bulleted (as below).
