@@ -16,6 +16,7 @@ The last topic in this section discusses different methods of [DOI Generation](D
     - [The Turing Way](https://book.the-turing-way.org/): an open-source, community data science handbook. It provides a strong foundation on the guiding principles for _this_ Guide, providing accessible explanations and overviews of topics from [reproducibility](https://book.the-turing-way.org/reproducible-research/reproducible-research), to [collaboration](https://book.the-turing-way.org/collaboration/collaboration) and [communication](https://book.the-turing-way.org/communication/communication), to [project design](https://book.the-turing-way.org/project-design/project-design), to [ethical research](https://book.the-turing-way.org/ethical-research/ethical-research). 
         
         _This is a particularly good resource for those [just starting to use `git` and GitHub](https://book.the-turing-way.org/reproducible-research/vcs/vcs-git). It builds motivation for use of version control through the lens of reproducibility._
+    - The [GitHub Repo Guide](GitHub-Repo-Guide.md) covers recommended repository contents and includes guidance on citations, including [OpenCite](https://imageomics.github.io/OpenCite/) for creating a `CITATION.cff` file.
     - Go-FAIR Initiative: [The FAIR Principles](https://www.go-fair.org/fair-principles/)
     - Ozoani, Ezi and Gerchick, Marissa and Mitchell, Margaret. Model Card Guidebook. Hugging Face, 2022. [https://huggingface.co/docs/hub/en/model-card-guidebook](https://huggingface.co/docs/hub/en/model-card-guidebook). 
         
