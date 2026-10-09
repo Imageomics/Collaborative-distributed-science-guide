@@ -243,11 +243,7 @@ Contributing guidelines are important to maintain consistency across the way peo
 
 When using the Zenodo-GitHub integration for [automatic DOI generation](DOI-Generation.md#automatic-generation), tracking metadata beyond the basics (authors, keywords, title, etc.) requires manual updates to the Zenodo record. The solution for this is to include a `.zenodo.json` file to keep track of this information (e.g., grant funding and references).
 
-A `.zenodo.json` can be created by applying [cffconvert](https://github.com/citation-file-format/cffconvert) to your `CITATION.cff` (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the [Zenodo dev guide](https://developers.zenodo.org/#representation)), or copy the example below into a new file and update it with the appropriate information (comments should be removed prior to upload).
-
-!!! tip "Pro tip"
-    To create both metadata files from one form, use
-    [OpenCite](https://imageomics.github.io/OpenCite/).
+A `.zenodo.json` can be created by applying [cffconvert](https://github.com/citation-file-format/cffconvert) to your `CITATION.cff` (without the references, as these are not supported). Then add the references and other metadata back in to the JSON (following the [Zenodo dev guide](https://developers.zenodo.org/#representation)). Alternatively, you can use [OpenCite](https://imageomics.github.io/OpenCite/)[^2] to generate both files together, or copy the example below into a new file and update it with the appropriate information (comments should be removed prior to upload).
 
 !!! note
     The `publication_date` and `version` will need to be updated along with the `CITATION.cff` for each release.
