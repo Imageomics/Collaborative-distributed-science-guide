@@ -118,7 +118,7 @@ Providing this file is as simple as copying the below example and filling in you
 === "Standard Citation File (Recommended)"
 
     !!! tip "Pro tip"
-        Pair this citation file with a [`.zenodo.json`](#zenodo-metadata) for easier DOI metadata tracking (grants, references, associated papers).
+        Pair this citation file with a [`.zenodo.json`](#zenodo-metadata) for easier DOI metadata tracking (grants, references, associated papers). [OpenCite](https://imageomics.github.io/OpenCite/) can generate both files from one form with helpful previews to review the files before downloading them.
 
     ```yaml { py linenums="1" }
     abstract: "<describe your code/package>"
