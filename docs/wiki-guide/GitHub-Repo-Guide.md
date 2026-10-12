@@ -101,9 +101,7 @@ For more information on managing these environments and generating such files pr
 
 ### CITATION
 
-Make it easier for people to cite your project by including a [CITATION.cff file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files);
-you can copy-paste the [template below](#citation-templates) or use
-[OpenCite](https://imageomics.github.io/OpenCite/)[^2].
+Make it easier for people to cite your project by including a [CITATION.cff file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files); you can copy-paste the [template below](#citation-templates) or use [OpenCite](https://imageomics.github.io/OpenCite/)[^2].
 
 As with journal publications, we expect to be cited when someone uses our code. To facilitate proper attribution, GitHub will automatically read a [CITATION.cff file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) and display a link to "cite this repository". This file is also used to populate metadata fields in a [Zenodo](https://zenodo.org/) record when [auto-generating a DOI](DOI-Generation.md#2-generate-a-doi-with-zenodo). As with any other component of your project, this file may change over the project's lifespan (see [Digital Product Life Cycle](Digital-Product-Lifecycle.md) for details), but it should be present and updated before any release.
 
