@@ -219,13 +219,7 @@ Providing this file is as simple as copying the below example and filling in you
     Check whether your citation renders correctly on a branch. When you push the `CITATION.cff` to a branch and browse the repository at that branch, you can select "Cite this repository" in the righthand sidebar to see if it is rendering as expected:
     ![Screenshot of "Cite this repository" pop-up on the Collaborative Distributed Science Guide repository. It shows APA and BibTeX 'content tabs' with the beginnings of a scrollable and copiable citation](images/GH-repo-guide/citation-cff-check.png)
 
-[^2]: [OpenCite](https://imageomics.github.io/OpenCite/) creates standardized citation
-    metadata through a guided form for project details, authors, identifiers,
-    references, and funding, which can be imported from a GitHub repository. It
-    previews the generated `CITATION.cff` and `.zenodo.json` files, helping to
-    avoid missing or inconsistent metadata when preparing for release and/or
-    archive to Zenodo. Always review the generated or imported information for
-    accuracy before adding the files to a repository or publishing a DOI.
+[^2]: [OpenCite](https://imageomics.github.io/OpenCite/) creates standardized citation metadata through a guided form for project details, authors, identifiers, references, and funding, which can be imported from a GitHub repository. It previews the generated `CITATION.cff` and `.zenodo.json` files, helping to avoid missing or inconsistent metadata when preparing for release and/or archive to Zenodo. Always review the generated or imported information for accuracy before adding the files to a repository or publishing a DOI.
 
 ## Recommended Files
 
