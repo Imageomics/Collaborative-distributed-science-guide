@@ -19,7 +19,7 @@ This page is a quick reference for setting up a repository to automatically rele
 
 ### Add/Update Citation and Zenodo Metadata Files
 
-Review or create both a [`CITATION.cff`](GitHub-Repo-Guide.md#citation) and [`.zenodo.json`](GitHub-Repo-Guide.md#zenodo-metadata) file following guide instructions. Be sure to include
+Review or create both a [`CITATION.cff`](GitHub-Repo-Guide.md#citation) and [`.zenodo.json`](GitHub-Repo-Guide.md#zenodo-metadata) file following guide instructions. [OpenCite](https://imageomics.github.io/OpenCite/) can help generate and check both these files.
 
 !!! tip "Pro tip"
     Add this [test to validate the Zenodo metatdata file](https://github.com/Imageomics/Collaborative-distributed-science-guide/blob/main/.github/workflows/validate-zenodo.yaml). It will run whenever the `.zenodo.json` or workflow file are edited, ensuring that your Zenodo integration will run smoothly.
